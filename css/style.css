@@ -1,0 +1,132 @@
+/* Liz Bright - css for Final Project */
+
+body {
+    background-color: grey;
+    font-family: Baskerville, Georgia, Cambria, serif;
+    font-size: 100%
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+header {
+    background-color: #393939;
+    color: orange;
+    padding-top: 1em;
+    padding-bottom: 2.5em;
+    overflow: hidden;
+    height: 70px;
+    min-width: 100%;
+}
+
+header h1, h2 {
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-size: 2.8em;
+
+}
+
+header h2 {
+    font-size: 2em;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.background {
+    background-image: url("https://s3.amazonaws.com/eabdgmde15/pomes_images/fall/fall1.jpg");
+    height: 685px;
+    position: relative;
+}
+
+/* css left side */
+/* https://www.sitepoint.com/css-center-position-absolute-div/ */
+.forecast {
+    background-color: #FFF6E6;
+    background-image: url('https://s3.amazonaws.com/eabdgmde15/pomes_images/fall/fall3.jpg');
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5em;
+    left: 50%;
+    margin-left: -315px;
+    padding: 35px 25px 5px 25px;
+    overflow: auto;
+    top: 100px;
+    height: 400px;
+    width: 600px;
+    position: absolute;
+}
+
+.forecast h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.forecast ul {
+    margin-left: -12px;
+}
+
+#forecast {
+    font-size: .75em;
+    padding-top: .5em;
+}
+
+#forecastURL, #update {
+    font-size: .75em;
+    margin-bottom: -12px;
+}
+
+#apitext {
+    font-size: .75em;
+    margin-bottom: 5px;
+    top: 630px;
+    left: 420px;
+    position: absolute;
+}
+
+#canvas3, #canvas4 {
+    background-color: grey;
+    top: 0x;
+    position: absolute;
+}
+
+#canvas3 {
+    left: 0px;
+}
+
+#canvas4 {
+    right: 0px;
+}
+
+#phototag {
+    color: #393939;
+    font-size: 1em;
+    text-decoration: none;
+    top: 610px;
+    right: 150px;
+    position: absolute;
+}
+
+/* css footer */
+
+footer {
+    background-color: #393939;
+    height: 50px;
+}
+
+footer #logo {
+    background-color: #FFF6E6;
+    right: 92.5px;
+    top: 835px;
+    position: absolute;
+}

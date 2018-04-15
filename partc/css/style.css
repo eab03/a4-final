@@ -1,0 +1,235 @@
+/* Liz Bright - css for Final Project */
+
+body {
+    background-color: grey;
+    font-family: Baskerville, Georgia, Cambria, serif;
+    font-size: 100%
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+header {
+    background-color: #393939;
+    color: orange;
+    padding-top: 1em;
+    padding-bottom: 2.5em;
+    overflow: hidden;
+    height: 70px;
+    min-width: 100%;
+}
+
+header h1, h2 {
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-size: 2.8em;
+
+}
+
+header h2 {
+    font-size: 2em;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.background {
+    background-image: url("https://s3.amazonaws.com/eabdgmde15/pomes_images/fall/fall1.jpg");
+    height: 685px;
+    position: relative;
+}
+
+/* https://www.sitepoint.com/css-center-position-absolute-div/ */
+.forecast {
+    background-color: #FFF6E6;
+    background-image: url('https://s3.amazonaws.com/eabdgmde15/pomes_images/fall/fall3.jpg');
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5em;
+    left: 50%;
+    margin-left: -315px;
+    padding: 35px 25px 5px 25px;
+    overflow: auto;
+    top: 100px;
+    height: 400px;
+    width: 600px;
+    position: absolute;
+}
+
+.forecast h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.forecast ul {
+    margin-left: -12px;
+}
+
+#forecast {
+    font-size: .75em;
+    padding-top: .5em;
+}
+
+#forecastURL, #update {
+    font-size: .75em;
+    margin-bottom: -12px;
+}
+
+#apitext {
+    font-size: .75em;
+    margin-bottom: 5px;
+    top: 630px;
+    left: 420px;
+    position: absolute;
+}
+
+/* css right side */
+
+#photo1, #photo2 {
+    border: 2px solid grey;
+    border-radius: 5px;
+    height: 150px;
+    width: 200px;
+    position: absolute;
+}
+
+#photo1 {
+    top: 50px;
+    left: 910px;
+}
+
+#photo2 {
+    left: 690px;
+    top: 450px;
+}
+
+#canvas1, #canvas2 {
+    background-color: #FFF6E6;
+    border-radius: 5px;
+    position: absolute;
+}
+
+#canvas1 {
+    top: 50px;
+    left: 690px;
+}
+
+#canvas2 {
+    top: 450px;
+    left: 910px;
+}
+
+#canvas3, #canvas4 {
+    background-color: grey;
+    top: 0x;
+    position: absolute;
+}
+
+#canvas3 {
+    left: 0px;
+}
+
+#canvas4 {
+    right: 0px;
+}
+
+form {
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
+    top: 222.5px;
+    left: 690px;
+    height: 200px;
+    width: 420px;
+    position: absolute;
+}
+
+fieldset {
+    border: none;
+    margin: 8px;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+legend {
+    color: orange;
+    font-weight: bold;
+    font-size: 1.75em;
+    margin-bottom: -1em;
+}
+
+label {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+form p {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+form p:first-child {
+    margin-bottom: 32px;
+}
+
+input[type=number] {
+    font-size: .85em;
+    font-family: Baskerville, Georgia, Cambria, serif;
+    height: 24px;
+    padding-bottom: 2.5px;
+    padding-left: 5px;
+    width: 50px;
+}
+
+.stop {
+    background-color: orange;
+    border-radius: 5px;
+    float: right;
+    left: 310px;
+    margin-top: -30px;
+    height: 32px;
+    width: 96px;
+    position: absolute;
+}
+
+.stop p {
+    font-size: .5em;
+    line-height: 12px;
+    margin-top: -.05px;
+    padding-top: 4px;
+    text-align: center;
+}
+
+#phototag {
+    color: #393939;
+    font-size: 1em;
+    text-decoration: none;
+    top: 610px;
+    right: 150px;
+    position: absolute;
+}
+
+/* css footer */
+
+footer {
+    background-color: #393939;
+    height: 50px;
+}
+
+footer #logo {
+    background-color: #FFF6E6;
+    right: 92.5px;
+    top: 835px;
+    position: absolute;
+}
