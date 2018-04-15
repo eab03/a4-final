@@ -144,7 +144,7 @@ a#youarehere {
     font-size: .75em;
 }
 
-#canvas3, #canvas4 {
+/* #canvas3, #canvas4 {
     background-color: grey;
     top: 0x;
     position: absolute;
@@ -156,7 +156,7 @@ a#youarehere {
 
 #canvas4 {
     right: 0px;
-}
+} */
 
 form {
     background-color: white;
