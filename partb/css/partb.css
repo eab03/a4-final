@@ -1,0 +1,157 @@
+/* Liz Bright - css for Assignment 3 */
+/* Please note this is currently styled to be best viewed on a laptop */
+
+body {
+    background-color: grey;
+    font-family: 'Comfortaa', cursive;
+    font-size: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+header {
+    background-color: #393939;
+    color: orange;
+    padding-top: 1em;
+    padding-bottom: 2.5em;
+    height: 90px;
+    width: 100%;
+}
+
+header h1, h2 {
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 25px;
+
+}
+
+header h2 {
+    font-size: 1.6  em;
+}
+
+.wrapper {
+    height: 685px;
+    width: 100%;
+    position: relative;
+}
+
+/* site navigation */
+nav#site-nav {
+    background-color: white;
+    margin-bottom: 25px;
+    margin-top: -15px;
+    min-width: 100%;
+}
+
+nav#site-nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav#site-nav ul li {
+	display: inline;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+	padding-right: 75px;
+}
+
+/* last li */
+#last {
+    padding-right: 0px;
+}
+
+nav#site-nav a:link, a:visited, a:hover, a:active {
+	color: coral;
+	text-decoration: none;
+}
+
+a#youarehere {
+    color: black;
+    font-weight: bold;
+}
+
+/* https://www.sitepoint.com/css-center-position-absolute-div/ */
+#mycontainer {
+    background-color: #FFF6E6;
+    border: 2px solid grey;
+    border-radius: 5px;
+    clear: all;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5em;
+    left: 50%;
+    margin-left: -315px;
+    padding: 35px 25px 5px 25px;
+    overflow: auto;
+    top: 75px;
+    height: 400px;
+    width: 600px;
+    position: absolute;
+}
+
+
+/* css left side */
+
+/* .form {
+    background-color: #FFF6E6;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin-bottom: 35px;
+    margin-left: 160px;
+    padding: 35px 25px 5px 25px;
+    overflow: auto;
+    top: 50px;
+    height: 400px;
+    width: 380px;
+    position: absolute;
+}
+
+legend {
+    color: orange;
+    font-weight: bold;
+    font-size: 1.75em;
+    margin-bottom: -1em;
+}
+
+#clickSeason {
+    font-size: 1em;
+    font-weight: bold;
+    left: 30;
+    top: 75;
+    position: absolute;
+}
+
+#selectSeason {
+    font-size: 1em;
+    font-weight: bold;
+    left: 30;
+    top: 175;
+    position: absolute;
+} */
+
+/* css footer */
+
+footer {
+    background-color: #393939;
+    clear: all;
+    color: white;
+    height: 50px;
+    width: 100%;
+}
+
+#left {
+    float: left;
+    margin-left: 165px;
+}
+
+#right {
+    float: right;
+    margin-right: 150px;
+}

@@ -2,7 +2,9 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/parta.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="js/jquery_final.js"></script> -->
 </head>
@@ -13,22 +15,35 @@
         <h2 id="location">Cambridge, Massachusetts</h2>
     </header>
 
-    <div class="wrapper" "background">
+    <!-- navigation -->
+    <nav id="site-nav">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a id="youarehere" href="parta.html">Today's Weather</a></li>
+            <li id="last"><a href="../partb/partb.html">Images</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
         <div class="background">
             <div id="content">
                 <div class="forecast">
+
                     <h3>Today's Forecast:</h3>
                     <p><span id="time"></span></p>
                     <p><span id="forecast"></span></p>
                     <br>
-                    <h3>Current Conditions:</h3>
-                    <ul>
-                        <li>Temperature (f): <span id="temperature"></span></li>
-                        <li>Wind Speed (mph): <span id="windSpeed"></span></li>
-                        <li>Wind Direction: <span id="windDirection"></span></li>
-                        <li>Precipitation: <span id="precipitation"></span></li>
-                    </ul>
-                    <br>
+
+                    <div id="conditions">
+                        <h3>Current Conditions:</h3>
+                        <ul>
+                            <li>Temperature (f): <span id="temperature"></span></li>
+                            <li>Wind Speed (mph): <span id="windSpeed"></span></li>
+                            <li>Wind Direction: <span id="windDirection"></span></li>
+                            <li>Precipitation: <span id="precipitation"></span></li>
+                        </ul>
+                    </div> <!-- close div conditions-->
+
                     <div id="moon">
                         <h3>Sunrise and Sunset:</h3>
                         <p><span id="sunrise">Sunrise: </span><br>
@@ -43,21 +58,12 @@
                 </div>
             </div> <!--close div content-->
 
-            <div id="phototag">
-                <p>Photographs by Liz Bright</p>
-            </div>
-
             <div id="borders">
                 <canvas id="canvas3" width="100" height="685"></canvas>
                 <canvas id="canvas4" width="100" height="685"></canvas>
-            </div>
-            <!--close div borders-->
-        </div>
-        <!--close div background-->
-    </div>
-    <!--close div wrapper-->
-
-    <li><a href="/index.html">Home</a></li>
+            </div> <!--close div borders-->
+        </div> <!--close div background-->
+    </div> <!--close div wrapper-->
 
     <footer>
         <div id="logo">

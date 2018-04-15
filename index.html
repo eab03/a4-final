@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
 <body>
@@ -11,29 +13,39 @@
         <h2 id="location">Weather Happens!</h2>
     </header>
 
+    <!-- navigation -->
+    <nav id="site-nav">
+        <ul>
+            <li><a id="youarehere" href="index.html">Home</a></li>
+            <li><a href="parta/parta.html">Today's Forecast</a></li>
+            <li id="last"><a href="partb/partb.html">Images</a></li>
+        </ul>
+    </nav>
+
     <div class="wrapper">
         <div class="background">
             <div id="content">
-                <div class="forecast">
-                    <li><a id="youarehere" href="index.html">Home</a></li>
-                    <li><a href="parta/parta.html">PartA</a></li>
-                    <li><a href="partb/partb.html">PartB</a></li>
-                    <li id="last"><a href="partc/partc.html">PartC</a></li>
-                </div>
-                <!--close div forecast-->
-            </div>
-            <!--close div content-->
 
-            <div id="phototag">
-                <p>Photographs by Liz Bright</p>
-            </div>
+                <div class="forecast">
+
+                    <!-- https://www.goodreads.com/work/quotes/2192250-a-brief-history-of-time-from-the-big-bang-to-black-holes -->
+                    <div class="quote">
+                        <p>“And so with the <span id="weather">sunshine</span> and the great bursts of leaves growing <br> on the trees, just as things grow in fast movies, I had that familiar conviction that life was beginning over again with the summer.”
+                        <br><br><span id="author">― F. Scott Fitzgerald, The Great Gatsby<span>
+                        </p>
+                    </div> <!-- close div quote -->
+                </div> <!--close div forecast-->
+            </div> <!--close div content-->
 
             <div id="borders">
                 <canvas id="canvas3" width="100" height="685"></canvas>
                 <canvas id="canvas4" width="100" height="685"></canvas>
-            </div> <!--close div borders-->
-        </div> <!--close div background-->
-    </div> <!--close div wrapper-->
+            </div>
+            <!--close div borders-->
+        </div>
+        <!--close div background-->
+    </div>
+    <!--close div wrapper-->
 
     <footer>
         <div id="logo">

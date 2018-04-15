@@ -22,23 +22,23 @@ function preload() {
 / 3. make use of at least one element-specific event handler and callback function:
 */
 function setup() {
-    let canvas = createCanvas(600, 450);
-    canvas.position(700, 50);
+    let canvas = createCanvas(600, 400);
+    // canvas.position(700, 50);
     canvas.parent('mycontainer');
     background(imgSpring2);
 
     // CREATE DROPDOWN MENU
     // https://github.com/processing/p5.js/issues/1864
     // https://gist.github.com/shiffman/7549e5225c042ee25a80
-    dropdown = createSelect();
-    dropdown.position(200, 400);
-    dropdown.option('select a season!');
-    dropdown.option('spring');
-    dropdown.option('summer');
-    dropdown.option('fall');
-    dropdown.option('winter');
-
-    dropdown.changed(mySelectEvent);
+    // dropdown = createSelect();
+    // dropdown.position(200, 400);
+    // dropdown.option('select a season!');
+    // dropdown.option('spring');
+    // dropdown.option('summer');
+    // dropdown.option('fall');
+    // dropdown.option('winter');
+    //
+    // dropdown.changed(mySelectEvent);
 
     // CREATE THE ELEMENT FOR THE QUOTATION
     /*
@@ -52,9 +52,9 @@ function setup() {
     // CREATE BUTTON
     // https://www.youtube.com/watch?v=587qclhguQg
     // https://vimeo.com/channels/learningp5js/142698163
-    quoteButton = createButton('click me');
-    quoteButton.position(200, 300);
-    quoteButton.mousePressed(changeQuote);
+    // quoteButton = createButton('click me');
+    // quoteButton.position(200, 300);
+    // quoteButton.mousePressed(changeQuote);
 } // close function setup
 
 function draw() {}

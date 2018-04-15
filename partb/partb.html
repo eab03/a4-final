@@ -2,9 +2,14 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-    <script type="text/javascript" src="js/jquery_final.js"></script> -->
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <link rel="stylesheet" type="text/css" href="css/partb.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="partb.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/p5.dom.min.js"></script>
 </head>
 
 <body>
@@ -14,33 +19,33 @@
             <h2 id="location">Cambridge, Massachusetts</h2>
         </header>
 
+        <!-- navigation -->
+        <nav id="site-nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="../parta/parta.html">Today's Weather</a></li>
+                <li id="last"><a id="youarehere" href="partb.html">Images</a></li>
+            </ul>
+        </nav>
+
+
         <div class="wrapper">
-            <div class="background">
-                <div class="forecast">
-                    <label for="inputTemperature" id="label1">Temperature</label>
-                    <input type="number" id="inputTemperature" name="inputTemperature" value="" placeholder=" f" />
-                    <label for="inputWind" id="label2">Wind</label>
-                    <input type="number" id="inputWind" name="inputWind" value="" placeholder="mph" />
-                    <br>
-                </div>
-                    <li><a href="/index.html">Home</a></li>
+            <!-- <div class="form">
+                    <legend id="legend">All About the Seasons!</legend>
+                    <p id="clickSeason">Click here to randomly change the quote!</p>
+                    <p id="selectSeason">Select the season to change the photo!</p>
+                </div> <!-close div class form-->
 
-        <div id="phototag">
-            <p>Photographs by Liz Bright</p>
+            <div id="mycontainer"></div>
+
         </div>
-
-    <div id="borders">
-        <canvas id="canvas3" width="100" height="685"></canvas>
-        <canvas id="canvas4" width="100" height="685"></canvas>
-    </div> <!--close div borders-->
-    </div>
-    <!--close div background-->
+        <!--close div bgimg-->
     </div>
     <!--close div wrapper-->
 
     <footer>
         <div id="logo">
-            <a href=""><img src="../images/wundergroundLogo_4c_horz.png" width="90px" /></a>
+            <a href=""><img src="images/wundergroundLogo_4c_horz.png" width="90px" /></a>
         </div>
     </footer>
     </div>

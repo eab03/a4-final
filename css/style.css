@@ -2,7 +2,7 @@
 
 body {
     background-color: grey;
-    font-family: Baskerville, Georgia, Cambria, serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 100%
     margin: 0;
     min-height: 100%;
@@ -15,7 +15,7 @@ header {
     padding-top: 1em;
     padding-bottom: 2.5em;
     overflow: hidden;
-    height: 70px;
+    height: 90px;
     min-width: 100%;
 }
 
@@ -28,11 +28,12 @@ header h1, h2 {
 
 header h1 {
     font-size: 2.8em;
+    margin-bottom: 25px;
 
 }
 
 header h2 {
-    font-size: 2em;
+    font-size: 1.6  em;
 }
 
 .wrapper {
@@ -40,7 +41,6 @@ header h2 {
 }
 
 .background {
-    background-image: url("https://s3.amazonaws.com/eabdgmde15/pomes_images/fall/fall1.jpg");
     height: 685px;
     position: relative;
 }
@@ -49,7 +49,6 @@ header h2 {
 /* https://www.sitepoint.com/css-center-position-absolute-div/ */
 .forecast {
     background-color: #FFF6E6;
-    background-image: url('https://s3.amazonaws.com/eabdgmde15/pomes_images/fall/fall3.jpg');
     border: 2px solid grey;
     border-radius: 5px;
     font-size: 1em;
@@ -59,39 +58,69 @@ header h2 {
     margin-left: -315px;
     padding: 35px 25px 5px 25px;
     overflow: auto;
-    top: 100px;
+    top: 75px;
     height: 400px;
     width: 600px;
     position: absolute;
 }
 
-.forecast h3 {
-    font-size: 1.5em;
+/* site navigation */
+nav#site-nav {
+    background-color: white;
+    margin-bottom: 25px;
+    margin-top: -15px;
+    min-width: 100%;
+}
+
+nav#site-nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav#site-nav ul li {
+	display: inline;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+	padding-right: 75px;
+}
+
+/* last li */
+#last {
+    padding-right: 0px;
+}
+
+nav#site-nav a:link, a:visited, a:hover, a:active {
+	color: coral;
+	text-decoration: none;
+}
+
+a#youarehere {
+    color: black;
     font-weight: bold;
-    margin-top: -10px;
-    margin-bottom: -10px;
 }
 
-.forecast ul {
-    margin-left: -12px;
+/* quote on home page */
+.quote {
+    margin-top: 105px;
 }
 
-#forecast {
-    font-size: .75em;
-    padding-top: .5em;
+.quote p {
+    color: darkgrey;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+    line-height: 28px;
+    margin-left: 15px;
+    text-align: left;
 }
 
-#forecastURL, #update {
-    font-size: .75em;
-    margin-bottom: -12px;
+span #weather {
+    color: salmon;
 }
 
-#apitext {
-    font-size: .75em;
-    margin-bottom: 5px;
-    top: 630px;
-    left: 420px;
-    position: absolute;
+#author {
+    font-style: italic;
+    font-size: .91em;
+    margin-left: 240px;
 }
 
 #canvas3, #canvas4 {
@@ -127,6 +156,6 @@ footer {
 footer #logo {
     background-color: #FFF6E6;
     right: 92.5px;
-    top: 835px;
+    top: 905px;
     position: absolute;
 }
