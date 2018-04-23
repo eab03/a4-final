@@ -56,7 +56,7 @@ header h2 {
     line-height: 1.5em;
     left: 50%;
     margin-left: -315px;
-    padding: 35px 25px 5px 25px;
+    padding: 7.5px 25px 5px 25px;
     overflow: auto;
     top: 75px;
     height: 400px;
@@ -112,6 +112,8 @@ a#youarehere {
 
 .forecast ul li {
     font-size: .75em;
+    list-style-type: none;
+    margin-left: -25px;
 }
 
 #forecast {
@@ -121,26 +123,39 @@ a#youarehere {
 
 #conditions {
     float: left;
-}
-
-#forecastURL, #update {
-    font-size: .5em;
-    margin-bottom: -12px;
-}
-
-#apitext {
-    font-size: .5em;
-    margin-bottom: 5px;
-    top: 475px;
-    left: 420px;
-    position: absolute;
+    margin-top: -5px;
 }
 
 #moon {
     float: right;
+    margin-top: -5px;
+}
+
+#moon h3 {
+    padding-bottom: 3px;
 }
 
 #moon p {
+    font-size: .75em;
+}
+
+.smallfont {
+    font-size: .75em;
+    padding-top: 2px;
+}
+
+#changelocation {
+    font-size: .75em;
+    top: 400px;
+    left: 430px;
+    position: absolute;
+}
+
+#changelocation h3 {
+    color: coral;
+}
+
+#changelocation p {
     font-size: .75em;
 }
 
@@ -203,6 +218,15 @@ form p:first-child {
 footer {
     background-color: #393939;
     height: 50px;
+}
+
+#apitext {
+    color: white;
+    font-size: .5em;
+    margin-bottom: 5px;
+    top: 905px;
+    left: 1050px;
+    position: absolute;
 }
 
 footer #logo {

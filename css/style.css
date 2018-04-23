@@ -102,6 +102,7 @@ a#youarehere {
 /* quote on home page */
 .quote {
     margin-top: 105px;
+    padding: 0px 50px 0px 50px;
 }
 
 .quote p {
@@ -113,17 +114,17 @@ a#youarehere {
     text-align: left;
 }
 
-span #weather {
-    color: salmon;
+span {
+    color: salmon !important;
 }
 
 #author {
     font-style: italic;
     font-size: .91em;
-    margin-left: 240px;
+    margin-left: 170px;
 }
 
-#canvas3, #canvas4 {
+/* #canvas3, #canvas4 {
     background-color: grey;
     top: 0x;
     position: absolute;
@@ -135,7 +136,7 @@ span #weather {
 
 #canvas4 {
     right: 0px;
-}
+} */
 
 #phototag {
     color: #393939;

@@ -5,6 +5,12 @@
     <link rel="stylesheet" type="text/css" href="css/parta.css" />
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="parta.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/p5.dom.min.js"></script>
+
     <!-- <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="js/jquery_final.js"></script> -->
 </head>
@@ -15,21 +21,21 @@
         <h2 id="location">Cambridge, Massachusetts</h2>
     </header>
 
-<!-- navigation -->
-<nav id="site-nav">
-    <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a id="youarehere" href="parta.html">Today's Weather</a></li>
-        <li id="last"><a href="../partb/partb.html">Images</a></li>
-    </ul>
-</nav>
+    <!-- navigation -->
+    <nav id="site-nav">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a id="youarehere" href="parta.html">Today's Weather</a></li>
+            <li id="last"><a href="../partb/partb.html">Images</a></li>
+        </ul>
+    </nav>
 
     <div class="wrapper">
         <div class="background">
             <div id="content">
                 <div class="forecast">
 
-                    <h3>Today's Forecast:</h3>
+                    <h3>Current Forecast:</h3>
                     <p><span id="time"></span></p>
                     <p><span id="forecast"></span></p>
                     <br>
@@ -37,25 +43,29 @@
                     <div id="conditions">
                         <h3>Current Conditions:</h3>
                         <ul>
-                            <li>Temperature (f): <span id="temperature"></span></li>
-                            <li>Wind Speed (mph): <span id="windSpeed"></span></li>
-                            <li>Wind Direction: <span id="windDirection"></span></li>
+                            <li>Temperature (f)/(c): <span id="temperature"></span></li>
                             <li>Precipitation: <span id="precipitation"></span></li>
+                            <li>Wind Speed (mph)/(kmh): <span id="windSpeed"></span></li>
+                            <li>Wind Direction: <span id="windDirection"></span></li>
                         </ul>
-                    </div> <!-- close div conditions-->
+                    </div>
+                    <!-- close div conditions-->
 
                     <div id="moon">
                         <h3>Sunrise and Sunset:</h3>
-                        <p><span id="sunrise">Sunrise: </span><br>
-                            <span id="sunset">Sunset: </span></p>
+                        <p>Sunrise: <span id="sunrise"></span><br> Sunset: <span id="sunset"></span></p>
+                        <p>Illumination of the Moon: <span id="illumination"></span></span></p>
                     </div>
-                    <p><br><span id="update"></span>
-                        <span id="forecastURL"></span>
-                    </p>
-                </div> <!--close div forecast-->
-                <div>
-                    <p id="apitext">Powered by Weather Underground</p>
+
                 </div>
+                <!--close div forecast-->
+
+                <div id="changelocation">
+                    <h3>Change Location:<h3>
+                    <p> City: <input id="city" value="Cambridge"></input>&nbsp &nbsp &nbsp State or Country: <input id="state" value="MA"></input>
+                    &nbsp &nbsp &nbsp<button id="submit">Submit</button></p>
+                </div> <!-- close div change location-->
+
             </div> <!--close div content-->
 
             <!-- <div id="borders">
@@ -66,6 +76,10 @@
     </div> <!--close div wrapper-->
 
     <footer>
+
+        <div>
+            <p id="apitext">Powered by Weather Underground</p>
+        </div>
         <div id="logo">
             <a href=""><img src="../images/wundergroundLogo_4c_horz.png" width="90px" /></a>
         </div>
