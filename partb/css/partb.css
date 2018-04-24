@@ -96,6 +96,14 @@ a#youarehere {
     position: absolute;
 }
 
+.button {
+    background-color: grey;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    height: 25px;
+}
 
 /* css left side */
 

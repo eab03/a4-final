@@ -146,8 +146,7 @@ a#youarehere {
 
 #changelocation {
     font-size: .75em;
-    top: 400px;
-    left: 430px;
+    top: 325px;
     position: absolute;
 }
 
@@ -173,45 +172,6 @@ a#youarehere {
     right: 0px;
 } */
 
-form {
-    background-color: white;
-    border: 2px solid grey;
-    border-radius: 5px;
-    top: 222.5px;
-    left: 690px;
-    height: 200px;
-    width: 420px;
-    position: absolute;
-}
-
-fieldset {
-    border: none;
-    margin: 8px;
-    margin-top: 20px;
-    padding-top: 40px;
-}
-
-legend {
-    color: orange;
-    font-weight: bold;
-    font-size: 1.75em;
-    margin-bottom: -1em;
-}
-
-label {
-    margin-right: 5px;
-    font-weight: bold;
-}
-
-form p {
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
-
-form p:first-child {
-    margin-bottom: 32px;
-}
 
 /* css footer */
 
