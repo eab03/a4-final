@@ -1,9 +1,9 @@
-/* Liz Bright - css for Final Project */
+/* Liz Bright - css for parta */
 
 body {
     background-color: grey;
     font-family: 'Comfortaa', cursive;
-    font-size: 100%
+    font-size: 100%;
     margin: 0;
     min-height: 100%;
     min-width: 100%;
@@ -12,8 +12,7 @@ body {
 header {
     background-color: #393939;
     color: orange;
-    padding-top: 1em;
-    padding-bottom: 2.5em;
+    padding: 1em 0em 2em 0em;
     overflow: hidden;
     height: 90px;
     min-width: 100%;
@@ -29,42 +28,15 @@ header h1, h2 {
 header h1 {
     font-size: 2.8em;
     margin-bottom: 25px;
-
 }
 
 header h2 {
-    font-size: 1.6  em;
+    font-size: 1.6 em;
 }
 
-.wrapper {
-    width: 100%;
-}
-
-.background {
-    height: 685px;
-    position: relative;
-}
-
-/* https://www.sitepoint.com/css-center-position-absolute-div/ */
-.forecast {
-    background-color: #FFF6E6;
-    border: 2px solid grey;
-    border-radius: 5px;
-    clear: all;
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 1.5em;
-    left: 50%;
-    margin-left: -315px;
-    padding: 7.5px 25px 5px 25px;
-    overflow: auto;
-    top: 75px;
-    height: 400px;
-    width: 600px;
-    position: absolute;
-}
 
 /* site navigation */
+
 nav#site-nav {
     background-color: white;
     margin-bottom: 25px;
@@ -78,20 +50,22 @@ nav#site-nav ul {
 }
 
 nav#site-nav ul li {
-	display: inline;
+    display: inline;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.25em;
-	padding-right: 75px;
+    padding-right: 75px;
 }
 
+
 /* last li */
+
 #last {
     padding-right: 0px;
 }
 
 nav#site-nav a:link, a:visited, a:hover, a:active {
-	color: coral;
-	text-decoration: none;
+    color: coral;
+    text-decoration: none;
 }
 
 a#youarehere {
@@ -99,18 +73,42 @@ a#youarehere {
     font-weight: bold;
 }
 
-.forecast h3 {
+.wrapper {
+    width: 100%;
+}
+
+
+/* https://www.sitepoint.com/css-center-position-absolute-div/ */
+
+.content {
+    background-color: #FFF6E6;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin-left: -315px;
+    padding: 5px 25px 5px 25px;
+    overflow: auto;
+    top: 300px;
+    left: 50%;
+    height: 400px;
+    width: 600px;
+    position: absolute;
+}
+
+.content h3 {
     color: coral;
     font-size: 1.25em;
     font-weight: bold;
     margin-bottom: -10px;
 }
 
-.forecast ul {
+.content ul {
     margin-left: -12px;
 }
 
-.forecast ul li {
+.content ul li {
     font-size: .75em;
     list-style-type: none;
     margin-left: -25px;
@@ -158,6 +156,7 @@ a#youarehere {
     font-size: .75em;
 }
 
+
 /* #canvas3, #canvas4 {
     background-color: grey;
     top: 0x;
@@ -173,11 +172,12 @@ a#youarehere {
 } */
 
 
-/* css footer */
+/* footer */
 
 footer {
     background-color: #393939;
     height: 50px;
+    margin-top: 720px;
 }
 
 #apitext {
@@ -189,9 +189,9 @@ footer {
     position: absolute;
 }
 
-footer #logo {
+#logo {
     background-color: #FFF6E6;
     right: 92.5px;
-    top: 905px;
+    top: 900px;
     position: absolute;
 }

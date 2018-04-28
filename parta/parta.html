@@ -31,60 +31,51 @@
     </nav>
 
     <div class="wrapper">
-        <div class="background">
-            <div id="content">
-                <div class="forecast">
+        <div class="content">
 
-                    <h3>Current Forecast:</h3>
-                    <p><span id="time"></span></p>
-                    <p><span id="forecast"></span></p>
-                    <br>
+            <div id="current">
+                <h3>Current Forecast:</h3>
+                <p><span id="time"></span></p>
+                <p><span id="forecast"></span></p>
+            </div>
 
-                    <div id="conditions">
-                        <h3>Current Conditions:</h3>
-                        <ul>
-                            <li>Temperature (f)/(c): <span id="temperature"></span></li>
-                            <li>Precipitation: <span id="precipitation"></span></li>
-                            <li>Wind Speed (mph)/(kmh): <span id="windSpeed"></span></li>
-                            <li>Wind Direction: <span id="windDirection"></span></li>
-                        </ul>
-                    </div>
-                    <!-- close div conditions-->
+            <div id="conditions">
+                <h3>Current Conditions:</h3>
+                <ul>
+                    <li>Temperature (f)/(c): <span id="temperature"></span></li>
+                    <li>Precipitation: <span id="precipitation"></span></li>
+                    <li>Wind Speed (mph)/(kmh): <span id="windSpeed"></span></li>
+                    <li>Wind Direction: <span id="windDirection"></span></li>
+                </ul>
+            </div>
+            <!-- close div conditions-->
 
-                    <div id="moon">
-                        <h3>Sunrise and Sunset:</h3>
-                        <p>Sunrise: <span id="sunrise"></span><br> Sunset: <span id="sunset"></span></p>
-                        <p>Illumination of the Moon: <span id="illumination"></span></span></p>
-                    </div>
+            <div id="moon">
+                <h3>Sunrise and Sunset:</h3>
+                <p>Sunrise: <span id="sunrise"></span><br> Sunset: <span id="sunset"></span></p>
+                <p>Illumination of the Moon: <span id="illumination"></span></span>
+                </p>
+            </div>
 
-                    <div id="changelocation">
-                        <h3>Change Location:<h3>
-                        <p> City: <input id="city" value="Cambridge"></input>&nbsp &nbsp &nbsp State or Country: <input id="state" value="MA"></input>
-                        &nbsp &nbsp &nbsp<button id="submit">Submit</button></p>
-                    </div> <!-- close div change location-->
+            <div id="changelocation">
+                <h3>Change Location:<h3>
+                <p> City: <input id="city" value="Cambridge"></input>&nbsp &nbsp &nbsp State or Country: <input id="state" value="MA"></input>
+                &nbsp &nbsp &nbsp<button id="submit">Submit</button></p>
+            </div> <!-- close div change location-->
 
-                </div>
-                <!--close div forecast-->
+        </div>
+                <!--close div content-->
 
-
-
-            </div> <!--close div content-->
 
             <!-- <div id="borders">
                 <canvas id="canvas3" width="100" height="685"></canvas>
                 <canvas id="canvas4" width="100" height="685"></canvas>
             </div> <!-close div borders-->
-        </div> <!--close div background-->
     </div> <!--close div wrapper-->
 
     <footer>
-
-        <div>
-            <p id="apitext">Powered by Weather Underground</p>
-        </div>
-        <div id="logo">
-            <a href=""><img src="../images/wundergroundLogo_4c_horz.png" width="90px" /></a>
-        </div>
+        <p id="apitext">Powered by Weather Underground</p>
+        <a href="" id="logo"><img src="../images/wundergroundLogo_4c_horz.png" width="90px" /></a>
     </footer>
 </body>
 

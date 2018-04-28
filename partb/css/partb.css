@@ -1,5 +1,4 @@
-/* Liz Bright - css for Assignment 3 */
-/* Please note this is currently styled to be best viewed on a laptop */
+/* Liz Bright - css for partb*/
 
 body {
     background-color: grey;
@@ -13,8 +12,7 @@ body {
 header {
     background-color: #393939;
     color: orange;
-    padding-top: 1em;
-    padding-bottom: 2.5em;
+    padding: 1em 0em 2em 0em;
     height: 90px;
     width: 100%;
 }
@@ -29,17 +27,10 @@ header h1, h2 {
 header h1 {
     font-size: 2.8em;
     margin-bottom: 25px;
-
 }
 
 header h2 {
-    font-size: 1.6  em;
-}
-
-.wrapper {
-    height: 685px;
-    width: 100%;
-    position: relative;
+    font-size: 1.6em;
 }
 
 /* site navigation */
@@ -77,6 +68,13 @@ a#youarehere {
     font-weight: bold;
 }
 
+.wrapper {
+    height: 685px;
+    width: 100%;
+    position: relative;
+}
+
+/* div for canvas, dropdown, quote and sound  */
 /* https://www.sitepoint.com/css-center-position-absolute-div/ */
 #mycontainer {
     background-color: #FFF6E6;
@@ -86,80 +84,80 @@ a#youarehere {
     font-size: 1em;
     font-weight: normal;
     line-height: 1.5em;
-    left: 50%;
     margin-left: -315px;
     padding: 35px 25px 5px 25px;
     overflow: auto;
-    top: 75px;
+    top: 100px;
+    left: 50%;
     height: 400px;
     width: 600px;
     position: absolute;
 }
 
-.button {
-    background-color: grey;
-    color: black;
-    font-size: 15px;
-    font-weight: bold;
-    width: 100px;
-    height: 25px;
-}
-
-/* css left side */
-
-/* .form {
+/* https://www.proy.info/style-select-dropdown-using-css/ */
+/* https://stackoverflow.com/questions/3397113/how-to-remove-border-outline-around-text-input-boxes-chrome */
+.dropdown {
+    display: block;
+    height: auto !important;
+    border: none;
+    border-radius: 3px;
+    background: url("https://image.ibb.co/iMeAJv/selectbox_arrow.png") right center no-repeat;
     background-color: #FFF6E6;
-    border: 2px solid grey;
-    border-radius: 5px;
-    margin-bottom: 35px;
-    margin-left: 160px;
-    padding: 35px 25px 5px 25px;
-    overflow: auto;
-    top: 50px;
-    height: 400px;
-    width: 380px;
+    color: coral;
+    font-size: 1.25em;
+    line-height: 25px !important;
+    outline: none;
+    padding: 7.5px 50px 7.5px 13px !important;
+    margin: 0 auto;
+    margin-top: -15px;
+    left: 200px;
+    max-width: 100%;
+    position: absolute;
+
+    appearance: none;
+    /* this is must */ -webkit-appearance: none;
+    -moz-appearance: none;
     position: absolute;
 }
 
-legend {
-    color: orange;
-    font-weight: bold;
-    font-size: 1.75em;
-    margin-bottom: -1em;
-}
-
-#clickSeason {
-    font-size: 1em;
-    font-weight: bold;
-    left: 30;
-    top: 75;
+/* quotes */
+.quote {
+    color: darkgrey;
+    font-size: .8em;
+    margin: 0 auto;
+    margin-left: -187.5px;
+    padding-top: 50px;
+    top: 600px;
+    left: 50%;
+    max-width: 100%;
     position: absolute;
 }
 
-#selectSeason {
-    font-size: 1em;
-    font-weight: bold;
-    left: 30;
-    top: 175;
+span {
+    color: coral;
+}
+
+/* sound button */
+/* https://fontawesome.com/v4.7.0/icon/play/ */
+/* https://fontawesome.com/v4.7.0/icon/stop/ */
+#playButton {
     position: absolute;
-} */
+    top: 400px;
+    margin-left: 170px;
+    left: 50%;
+    color: coral;
+}
 
-/* css footer */
-
+/* footer */
 footer {
     background-color: #393939;
-    clear: all;
-    color: white;
     height: 50px;
-    width: 100%;
+    margin-top: 7.5px;
 }
 
-#left {
-    float: left;
-    margin-left: 165px;
-}
-
-#right {
-    float: right;
-    margin-right: 150px;
+#logo {
+    background-color: #FFF6E6;
+    right: 92.5px;
+    top: 900px;
+    position: absolute;
 }

@@ -3,7 +3,7 @@
 body {
     background-color: grey;
     font-family: 'Comfortaa', cursive;
-    font-size: 100%
+    font-size: 100%;
     margin: 0;
     min-height: 100%;
     min-width: 100%;
@@ -12,8 +12,7 @@ body {
 header {
     background-color: #393939;
     color: orange;
-    padding-top: 1em;
-    padding-bottom: 2.5em;
+    padding: 1em 0em 2em 0em;
     overflow: hidden;
     height: 90px;
     min-width: 100%;
@@ -29,39 +28,10 @@ header h1, h2 {
 header h1 {
     font-size: 2.8em;
     margin-bottom: 25px;
-
 }
 
 header h2 {
-    font-size: 1.6  em;
-}
-
-.wrapper {
-    width: 100%;
-}
-
-.background {
-    height: 685px;
-    position: relative;
-}
-
-/* css left side */
-/* https://www.sitepoint.com/css-center-position-absolute-div/ */
-.forecast {
-    background-color: #FFF6E6;
-    border: 2px solid grey;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 1.5em;
-    left: 50%;
-    margin-left: -315px;
-    padding: 35px 25px 5px 25px;
-    overflow: auto;
-    top: 75px;
-    height: 400px;
-    width: 600px;
-    position: absolute;
+    font-size: 1.6em;
 }
 
 /* site navigation */
@@ -99,6 +69,28 @@ a#youarehere {
     font-weight: bold;
 }
 
+.wrapper {
+    width: 100%;
+}
+
+/* https://www.sitepoint.com/css-center-position-absolute-div/ */
+.content {
+    background-color: #FFF6E6;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin-left: -315px;
+    padding: 35px 25px 5px 25px;
+    overflow: auto;
+    top: 300px;
+    left: 50%;
+    height: 400px;
+    width: 600px;
+    position: absolute;
+}
+
 /* quote on home page */
 .quote {
     margin-top: 105px;
@@ -115,7 +107,7 @@ a#youarehere {
 }
 
 span {
-    color: salmon !important;
+    color: salmon;
 }
 
 #author {
@@ -138,25 +130,16 @@ span {
     right: 0px;
 } */
 
-#phototag {
-    color: #393939;
-    font-size: 1em;
-    text-decoration: none;
-    top: 610px;
-    right: 150px;
-    position: absolute;
-}
-
-/* css footer */
-
+/* footer */
 footer {
     background-color: #393939;
     height: 50px;
+    margin-top: 720px;
 }
 
 footer #logo {
     background-color: #FFF6E6;
     right: 92.5px;
-    top: 905px;
+    top: 900px;
     position: absolute;
 }
