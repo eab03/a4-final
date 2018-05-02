@@ -13,8 +13,8 @@
 
 <body>
     <header>
-        <h1>Whether or Not...</h1>
-        <h2 id="location">Weather Happens!</h2>
+        <h1>Weather</h1>
+        <h2 id="location">It Happens or Not!</h2>
     </header>
 
     <!-- navigation -->
@@ -28,23 +28,21 @@
 
     <div class="wrapper">
         <div class="content">
-            <!-- https://www.goodreads.com/work/quotes/2192250-a-brief-history-of-time-from-the-big-bang-to-black-holes -->
-            <div class="quote">
-                <p>“And so with the <span id="weather">sunshine</span> and the great bursts of leaves growing on the trees, just as things grow in fast movies, <br>I had that familiar conviction that life was beginning over again with the <span id="weather">summer</span>.”</p>
-                <p id="author">― F. Scott Fitzgerald, The Great Gatsby</p>
-            </div>
-            <!-- close div quote -->
-        </div>
-        <!--close div forecast-->
+            <div id="mycontainer">
+                <!-- https://www.goodreads.com/work/quotes/2192250-a-brief-history-of-time-from-the-big-bang-to-black-holes -->
+                <div class="quote">
+                    <p id="quote"></p>
+                </div> <!-- close div quote -->
 
-        <!-- <div id="borders">
-            <canvas id="canvas3" width="100" height="685"></canvas>
-            <canvas id="canvas4" width="100" height="685"></canvas>
-        </div> -->
-        <!--close div borders-->
+            </div><!--close div mycontainer-->
+        </div> <!--close div content-->
 
-    </div>
-    <!--close div wrapper-->
+        <div class="borders">
+            <div id="borderleft"></div>
+            <div id="borderright"></div>
+        </div> <!--close div borders-->
+
+    </div> <!--close div wrapper-->
 
     <footer>
         <a href="" id="logo"><img src="./images/wundergroundLogo_4c_horz.png" width="90px" /></a>

@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-    <link rel="stylesheet" type="text/css" href="css/partb.css" />
+    <link rel="stylesheet" type="text/css" href="../css/partb.css" />
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
+    <script src="../libraries/p5.min.js"></script>
+    <script src="../libraries/p5.sound.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../libraries/p5.dom.min.js"></script>
     <script src="partb.js"></script>
-    <script language="javascript" type="text/javascript" src="libraries/p5.dom.min.js"></script>
     <script src="https://use.fontawesome.com/0c1e0212f8.js"></script>
 </head>
 
 <body>
-    <div class="content">
         <header>
             <h1 id="weather">The Four Seasons</h1>
             <h2 id="location">Cambridge, MA</h2>
@@ -29,21 +28,29 @@
             </ul>
         </nav>
 
-
         <div class="wrapper">
-            <div id="mycontainer">
-            <button id="playButton"></button>    
-            </div>
-        </div>
-        <!--close div wrapper-->
+
+            <div class="content">
+                <div id="mycontainer">
+                    <!-- <button id="forwardButton"></button> -->
+
+                    <p id="buttonDescription"></p>
+                    <button id="playButton"></button>
+                </div>
+            </div> <!--close div content-->
+
+            <div class="borders">
+                <div id="borderleft"></div>
+                <div id="borderright"></div>
+            </div> <!--close div borders    -->
+
+        </div> <!--close div wrapper-->
 
         <footer>
             <div id="logo">
-                <a href=""><img src="images/wundergroundLogo_4c_horz.png" width="90px" /></a>
+                <a href=""><img src="../images/wundergroundLogo_4c_horz.png" width="90px" /></a>
             </div>
         </footer>
-    </div>
-    <!--close div content-->
 </body>
 
 </html>

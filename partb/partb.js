@@ -4,7 +4,9 @@ let location1 = 'Cambridge, MA';
 let location2 = 'Boston, MA';
 
 let imgSpring, imgSummer, imgFall, imgWinter;
-let imgSpring2;
+let imgSpring2, imgFall2, imgWinter2;
+
+let randomImgSpring;
 
 // https://www.goodreads.com/quotes/tag/seasons
 // http://www.azquotes.com/quotes/topics/spring-rain.html
@@ -20,28 +22,35 @@ let winterQuote = 'Outside, <span>snow</span> solidified itself into graceful fo
 
 let sound;
 let springSound, summerSound, fallSound, winterSound;
+
 let button;
+let buttonDescription;
 
 let quoteSelect;
 
+// let forwardButton;
+
 // LOAD IMAGES AND SOUND FILES
 function preload() {
-    imgSpring = loadImage('images/spring2.jpg');
-    imgSummer = loadImage('images/summer2.jpg');
-    imgFall = loadImage('images/fall1.jpg');
-    imgWinter = loadImage('images/winter2.jpg');
-    imgSpring2 = loadImage('images/spring3.jpg');
+    imgSpring = loadImage('../images/spring2.jpg');
+    imgSpring2 = loadImage('../images/spring3.jpg');
+    imgSummer = loadImage('../images/summer2.jpg');
+    imgFall = loadImage('../images/fall1.jpg');
+    imgFall2 = loadImage('../images/fall5.jpg');
+    imgWinter = loadImage('../images/winter2.jpg');
+    imgWinter2 = loadImage('../images/winter3.jpg');
+
 
     // https://p5js.org/reference/#/p5.SoundFile
     soundFormats('mp3');
-    springSound = loadSound('assets/Rain-SoundBible.com-176235038.mp3');
-    summerSound = loadSound('assets/Sunny Day-SoundBible.com-2064222612.mp3');
-    fallSound = loadSound('assets/Wind-Mark_DiAngelo-1940285615.mp3');
-    winterSound = loadSound('assets/Snowing-SoundBible.com-495580994.mp3');
+    springSound = loadSound('../assets/Rain-SoundBible.com-176235038.mp3');
+    summerSound = loadSound('../assets/Sunny Day-SoundBible.com-2064222612.mp3');
+    fallSound = loadSound('../assets/Wind-Mark_DiAngelo-1940285615.mp3');
+    winterSound = loadSound('../assets/Snowing-SoundBible.com-495580994.mp3');
 }
 
 function setup() {
-    let canvas = createCanvas(400, 266.666);
+    let canvas = createCanvas(400, 266.66);
     canvas.position(125, 75);
     canvas.parent('mycontainer');
     background(imgSpring2);
@@ -59,6 +68,11 @@ function setup() {
     dropdown.option('Winter');
 
     dropdown.changed(mySelectEvent);
+
+
+    // button = select('#forwardButton');
+    // button.html('<i class="fa fa-play" aria-hidden="true"></i>');
+
 
     // CREATE THE ELEMENT FOR THE QUOTATION
     quoteSelect = createP("");
@@ -99,39 +113,68 @@ function draw() {}
 // LOAD SPECIFIC IMAGE WHEN THE DROPDOWN IS SELECTED
 // https://p5js.org/examples/image-load-and-display-image.html
 // https://processing.org/reference/PImage_resize_.html
+// https://css-tricks.com/snippets/javascript/select-random-item-array/
 function mySelectEvent() {
     let selected = this.selected();
     clocation = select('#location');
+    buttonDescription = select('#buttonDescription');
+    // forwardButton = select('#forwardButton');
     button.show();
+
+    let imgSpringArray = [imgSpring, imgSpring2];
+    for (i=0; i<imgSpringArray.length; i++) {
+        imgSpringArray[i];
+    }
+
+    let imgFallArray = [imgFall, imgFall2];
+    for (i=0; i<imgFallArray.length; i++) {
+        imgFallArray[i];
+    }
+
+    let imgWinterArray = [imgWinter, imgWinter2];
+    for (i=0; i<imgWinterArray.length; i++) {
+        imgWinterArray[i];
+    }
 
     if (selected === 'The Four Seasons') {
         background(imgSpring2);
         clocation.html(location1);
         quoteSelect.html(seasonQuote);
+        buttonDescription.html('');
         button.hide();
 
     } else if (selected === 'Spring') {
-        image(imgSpring, 0, 0, imgSpring.width / 7.5, imgSpring.height / 7.5);
+        let randomSpringImg = imgSpringArray[floor(random()*imgSpringArray.length)];
+        image(randomSpringImg, 0, 0, 400, 266.66);
+        // if (forwardButton.mousePressed()) {
+        //     randomSpringImg = imgSpringArray[0];
+        // }
         clocation.html(location1);
         quoteSelect.html(springQuote);
+        buttonDescription.html('rain');
         sound = springSound;
 
     } else if (selected === 'Summer') {
-        image(imgSummer, 0, 0, imgSummer.width / 7.5, imgSummer.height / 7.5);
+        image(imgSummer, 0, 0, 400, 266.66);
         clocation.html(location1);
         quoteSelect.html(summerQuote);
+        buttonDescription.html('sun');
         sound = summerSound;
 
     } else if (selected === 'Fall') {
-        image(imgFall, 0, 0, imgFall.width / 7.5, imgFall.height / 7.5);
+        let randomFallImg = imgFallArray[floor(random()*imgFallArray.length)];
+        image(randomFallImg, 0, 0, 400, 266.66);
         clocation.html(location1);
         quoteSelect.html(fallQuote);
+        buttonDescription.html('winds');
         sound = fallSound;
 
     } else if (selected === 'Winter') {
-        image(imgWinter, 0, 0, imgWinter.width / 7.5, imgWinter.height / 7.5);
+        let randomWinterImg = imgWinterArray[floor(random()*imgWinterArray.length)];
+        image(randomWinterImg, 0, 0, 400, 266.66);
         clocation.html(location1);
         quoteSelect.html(winterQuote);
+        buttonDescription.html('snow');
         sound = winterSound;
     }
 } // close function mySelectEvent

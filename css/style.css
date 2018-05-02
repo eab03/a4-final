@@ -11,7 +11,7 @@ body {
 
 header {
     background-color: #393939;
-    color: orange;
+    color: white;
     padding: 1em 0em 2em 0em;
     overflow: hidden;
     height: 90px;
@@ -36,7 +36,7 @@ header h2 {
 
 /* site navigation */
 nav#site-nav {
-    background-color: white;
+    background-color: #FFF6E6;
     margin-bottom: 25px;
     margin-top: -15px;
     min-width: 100%;
@@ -106,7 +106,7 @@ a#youarehere {
     text-align: left;
 }
 
-span {
+#weather {
     color: salmon;
 }
 
@@ -116,19 +116,22 @@ span {
     margin-left: 170px;
 }
 
-/* #canvas3, #canvas4 {
-    background-color: grey;
-    top: 0x;
+/* left and right divs for canvases */
+#borderleft, #borderright {
+    background-color: darkgrey;
+    top: 166px;
+    height: 720px;
+    width: 125px;
     position: absolute;
 }
 
-#canvas3 {
+#borderleft {
     left: 0px;
 }
 
-#canvas4 {
+#borderright {
     right: 0px;
-} */
+}
 
 /* footer */
 footer {
@@ -139,7 +142,7 @@ footer {
 
 footer #logo {
     background-color: #FFF6E6;
-    right: 92.5px;
+    right: 125px;
     top: 900px;
     position: absolute;
 }
