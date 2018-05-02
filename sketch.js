@@ -23,10 +23,10 @@ function seasons() {
     let s = function(p) {
 
         p.preload = function() {
-            imgSpring = p.loadImage('images/spring2.jpg');
-            imgSummer = p.loadImage('images/summer2.jpg');
-            imgFall = p.loadImage('images/fall1.jpg');
-            imgWinter = p.loadImage('images/winter2.jpg');
+            imgSpring = p.loadImage('./images/spring2.jpg');
+            imgSummer = p.loadImage('./images/summer2.jpg');
+            imgFall = p.loadImage('./images/fall1.jpg');
+            imgWinter = p.loadImage('./images/winter2.jpg');
         };
         p.setup = function() {
             p.createCanvas(125, 720);
@@ -58,10 +58,10 @@ function seasons() {
     let t = function(p) {
 
         p.preload = function() {
-            imgSpring = p.loadImage('images/spring2.jpg');
-            imgSummer = p.loadImage('images/summer2.jpg');
-            imgFall = p.loadImage('images/fall1.jpg');
-            imgWinter = p.loadImage('images/winter2.jpg');
+            imgSpring = p.loadImage('./images/spring2.jpg');
+            imgSummer = p.loadImage('./images/summer2.jpg');
+            imgFall = p.loadImage('./images/fall1.jpg');
+            imgWinter = p.loadImage('./images/winter2.jpg');
         };
         p.setup = function() {
             p.createCanvas(125, 720);
