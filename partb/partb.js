@@ -118,7 +118,8 @@ function mySelectEvent() {
     let selected = this.selected();
     clocation = select('#location');
     buttonDescription = select('#buttonDescription');
-    // forwardButton = select('#forwardButton');
+    forwardButton = select('#forwardButton');
+    forwardButton.html('<i class="fa fa-angle-right" aria-hidden="true"></i>');
     button.show();
 
     let imgSpringArray = [imgSpring, imgSpring2];
@@ -146,9 +147,6 @@ function mySelectEvent() {
     } else if (selected === 'Spring') {
         let randomSpringImg = imgSpringArray[floor(random()*imgSpringArray.length)];
         image(randomSpringImg, 0, 0, 400, 266.66);
-        // if (forwardButton.mousePressed()) {
-        //     randomSpringImg = imgSpringArray[0];
-        // }
         clocation.html(location1);
         quoteSelect.html(springQuote);
         buttonDescription.html('rain');

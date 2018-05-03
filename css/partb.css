@@ -137,13 +137,17 @@ span {
     color: coral;
 }
 
-/* #forwardButton {
-    color: coral;
+#forwardButton {
+    background: none;
+    border: none;
+    color: darkgrey;
     margin-left: 225px;
+    font-size: 135%;
+    font-weight: bold;
     top: 200px;
     left: 50%;
     position: absolute;
-} */
+}
 
 /* sound button */
 /* https://fontawesome.com/v4.7.0/icon/play/ */
