@@ -26,6 +26,8 @@ let springSound, summerSound, fallSound, winterSound;
 let button;
 let buttonDescription;
 
+let forwardButton;
+
 let quoteSelect;
 
 // let forwardButton;
@@ -88,6 +90,15 @@ function setup() {
     button.hide();
     button.html('<i class="fa fa-play" aria-hidden="true"></i>');
 
+    forwardButton = select('#forwardButton');
+    forwardButton.hide();
+    forwardButton.html('<i class="fa fa-angle-right" aria-hidden="true"></i>');
+
+    backButton = select('#backButton');
+    backButton.hide();
+    backButton.html('<i class="fa fa-angle-left" aria-hidden="true"></i>');
+
+
     resetIcon = function() {
         button.html('<i class="fa fa-play" aria-hidden="true"></i>');;
     }
@@ -118,24 +129,9 @@ function mySelectEvent() {
     let selected = this.selected();
     clocation = select('#location');
     buttonDescription = select('#buttonDescription');
-    forwardButton = select('#forwardButton');
-    forwardButton.html('<i class="fa fa-angle-right" aria-hidden="true"></i>');
     button.show();
-
-    let imgSpringArray = [imgSpring, imgSpring2];
-    for (i=0; i<imgSpringArray.length; i++) {
-        imgSpringArray[i];
-    }
-
-    let imgFallArray = [imgFall, imgFall2];
-    for (i=0; i<imgFallArray.length; i++) {
-        imgFallArray[i];
-    }
-
-    let imgWinterArray = [imgWinter, imgWinter2];
-    for (i=0; i<imgWinterArray.length; i++) {
-        imgWinterArray[i];
-    }
+    forwardButton.show();
+    backButton.show();
 
     if (selected === 'The Four Seasons') {
         background(imgSpring2);
@@ -143,10 +139,12 @@ function mySelectEvent() {
         quoteSelect.html(seasonQuote);
         buttonDescription.html('');
         button.hide();
+        backButton.hide();
+        forwardButton.hide();
 
     } else if (selected === 'Spring') {
-        let randomSpringImg = imgSpringArray[floor(random()*imgSpringArray.length)];
-        image(randomSpringImg, 0, 0, 400, 266.66);
+        image(imgSpring, 0, 0, 400, 266.66);
+        spring();
         clocation.html(location1);
         quoteSelect.html(springQuote);
         buttonDescription.html('rain');
@@ -154,25 +152,103 @@ function mySelectEvent() {
 
     } else if (selected === 'Summer') {
         image(imgSummer, 0, 0, 400, 266.66);
+        summer();
         clocation.html(location1);
         quoteSelect.html(summerQuote);
         buttonDescription.html('sun');
         sound = summerSound;
 
     } else if (selected === 'Fall') {
-        let randomFallImg = imgFallArray[floor(random()*imgFallArray.length)];
-        image(randomFallImg, 0, 0, 400, 266.66);
+        image(imgFall, 0, 0, 400, 266.66);
+        fall();
         clocation.html(location1);
         quoteSelect.html(fallQuote);
         buttonDescription.html('winds');
         sound = fallSound;
 
     } else if (selected === 'Winter') {
-        let randomWinterImg = imgWinterArray[floor(random()*imgWinterArray.length)];
-        image(randomWinterImg, 0, 0, 400, 266.66);
+        image(imgWinter, 0, 0, 400, 266.66);
+        winter();
         clocation.html(location1);
         quoteSelect.html(winterQuote);
         buttonDescription.html('snow');
         sound = winterSound;
     }
 } // close function mySelectEvent
+
+function spring() {
+    let imgSpringArray = [imgSpring, imgSpring2];
+    counter = 0;
+
+    forwardButton.mousePressed(function() {
+        for (i = 0; i < imgSpringArray.length; i++) {
+            image(imgSpringArray[i], 0, 0, 400, 266.66);
+            counter++;
+        }
+    });
+    backButton.mousePressed(function() {
+        counter = 0;
+        for (i = 0; i < imgSpringArray.length; i--) {
+            image(imgSpringArray[i], 0, 0, 400, 266.66);
+            counter--;
+        }
+    });
+}
+
+
+function summer() {
+    let imgSummerArray = [imgSummer];
+    counter = 0;
+
+    forwardButton.mousePressed(function() {
+        for (i = 0; i < imgSummerArray.length; i++) {
+            image(imgSummerArray[i], 0, 0, 400, 266.66);
+            counter++;
+        }
+    });
+    backButton.mousePressed(function() {
+        counter = 0;
+        for (i = 0; i < imgSummerArray.length; i--) {
+            image(imgSummerArray[i], 0, 0, 400, 266.66);
+            counter--;
+        }
+    });
+}
+
+function fall() {
+    let imgFallArray = [imgFall, imgFall2];
+    counter = 0;
+
+    forwardButton.mousePressed(function() {
+        for (i = 0; i < imgFallArray.length; i++) {
+            image(imgFallArray[i], 0, 0, 400, 266.66);
+            counter++;
+        }
+    });
+    backButton.mousePressed(function() {
+        counter = 0;
+        for (i = 0; i < imgFallArray.length; i--) {
+            image(imgFallArray[i], 0, 0, 400, 266.66);
+            counter--;
+        }
+    });
+}
+
+function winter() {
+    let imgWinterArray = [imgWinter, imgWinter2];
+    counter = 0;
+
+    forwardButton.mousePressed(function() {
+        for (i = 0; i < imgWinterArray.length; i++) {
+            image(imgWinterArray[i], 0, 0, 400, 266.66);
+            counter++;
+        }
+    });
+    backButton.mousePressed(function() {
+        counter = 0;
+        for (i = 0; i < imgWinterArray.length; i--) {
+            image(imgWinterArray[i], 0, 0, 400, 266.66);
+            counter--;
+        }
+    });
+}

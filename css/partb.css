@@ -109,7 +109,7 @@ a#youarehere {
     outline: none;
     padding: 7.5px 50px 7.5px 13px !important;
     margin: 0 auto;
-    margin-top: -15px;
+    margin-top: -17.5px;
     left: 200px;
     max-width: 100%;
     position: absolute;
@@ -137,6 +137,18 @@ span {
     color: coral;
 }
 
+#backButton {
+    background: none;
+    border: none;
+    color: darkgrey;
+    margin-left: -250px;
+    font-size: 135%;
+    font-weight: bold;
+    top: 200px;
+    left: 50%;
+    position: absolute;
+}
+
 #forwardButton {
     background: none;
     border: none;
@@ -155,7 +167,7 @@ span {
 #buttonDescription {
     color: coral;
     font-size: .75em;
-    margin-left: 132.5px;
+    margin-left: 130px;
     left: 50%;
     top: 385px;
     position: absolute;
