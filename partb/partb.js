@@ -1,55 +1,48 @@
 // CREATE VARIABLES
-let clocation;
-let location1 = 'Cambridge, MA';
-let location2 = 'Boston, MA';
+let imgSpringArray = [];
+let imgSummerArray = [];
+let imgFallArray = [];
+let imgWinterArray = [];
 
-let imgSpring1, imgSummer1, imgFall1, imgWinter1;
-let imgSpring2, imgFall2, imgWinter2;
-
-let randomImgSpring;
+let randomImg;
+let randomButton;
 
 // https://www.goodreads.com/quotes/tag/seasons
 // http://www.azquotes.com/quotes/topics/spring-rain.html
 // https://www.goodreads.com/quotes/tag/summer.html
 // http://www.azquotes.com/quotes/topics/autumn-wind.html
-// ******* add source for winter quote
+// https://www.goodreads.com/quotes/7342983-outside-snow-solidified-itself-into-graceful-forms-the-peace-of
 
 let seasonQuote = 'In the depth of winter, I finally learned that within me there <br>lay an invincible summer. ― Albert Camus';
 let springQuote = 'Spring <span>rain</span> conveyed under the trees in drops.<br>―Matsuo Basho';
 let summerQuote = 'Let us dance in the <span>sun</span>, wearing wild flowers in our hair...<br>―Susan Polis Schutz';
 let fallQuote = 'Wild is the music of autumnal <span>winds</span> Amongst the faded <br>woods. ―William Wordsworth';
 let winterQuote = 'Outside, <span>snow</span> solidified itself into graceful forms. The peace <br>of winter stars seemed permanent. ―Toni Morrison, Beloved';
+let quoteSelect;
 
 let sound;
 let springSound, summerSound, fallSound, winterSound;
-
 let button;
 let buttonDescription;
 
-let forwardButton;
-
-let quoteSelect;
-
-// let forwardButton;
-
 // LOAD IMAGES AND SOUND FILES
+// https://www.youtube.com/watch?v=FVYGyaxG4To
 function preload() {
-    imgSpring1 = loadImage('../images/spring/springa.jpg');
-    imgSpring2 = loadImage('../images/spring/springb.jpg');
-    imgSpring3 = loadImage('../images/spring/springc.jpg');
-    imgSpring4 = loadImage('../images/spring/springd.jpg');
-    imgSpring5 = loadImage('../images/spring/springe.jpg');
-    imgSpring5 = loadImage('../images/spring/springf.jpg');
-    imgSpring6 = loadImage('../images/spring/springg.jpg');
-    imgSpring7 = loadImage('../images/spring/springh.jpg');
-    imgSpring8 = loadImage('../images/spring/springi.jpg');
-    imgSummer1 = loadImage('../images/summer/summera.jpg');
-    imgSummer2 = loadImage('../images/summer/summerb.jpg');
-    imgFall1 = loadImage('../images/fall/falla.jpg');
-    imgFall2 = loadImage('../images/fall/fallb.jpg');
-    imgWinter1 = loadImage('../images/winter/wintera.jpg');
-    imgWinter2 = loadImage('../images/winter/winterb.jpg');
+    for (var i = 0; i < 7; i++) {
+        imgSpringArray[i] = loadImage('../images/spring/spring' + i + '.jpg');
+    }
+    for (var i = 0; i < 7; i++) {
+        imgSummerArray[i] = loadImage('../images/summer/summer' + i + '.jpg');
+    }
+    for (var i = 0; i < 7; i++) {
+        imgFallArray[i] = loadImage('../images/fall/fall' + i + '.jpg');
+    }
+    for (var i = 0; i < 7; i++) {
+        imgWinterArray[i] = loadImage('../images/winter/winter' + i + '.jpg');
+    }
 
+    imgSeason1 = loadImage('../images/season1.jpg');
+    imgSeason2 = loadImage('../images/season2.jpg');
 
     // https://p5js.org/reference/#/p5.SoundFile
     soundFormats('mp3');
@@ -63,7 +56,7 @@ function setup() {
     let canvas = createCanvas(400, 266.66);
     canvas.position(125, 75);
     canvas.parent('mycontainer');
-    background(imgSpring2);
+    background(imgSeason1);
 
     // CREATE DROPDOWN MENU
     // https://github.com/processing/p5.js/issues/1864
@@ -79,11 +72,6 @@ function setup() {
 
     dropdown.changed(mySelectEvent);
 
-
-    // button = select('#forwardButton');
-    // button.html('<i class="fa fa-play" aria-hidden="true"></i>');
-
-
     // CREATE THE ELEMENT FOR THE QUOTATION
     quoteSelect = createP("");
     dropdown.parent('mycontainer');
@@ -98,14 +86,9 @@ function setup() {
     button.hide();
     button.html('<i class="fa fa-play" aria-hidden="true"></i>');
 
-    forwardButton = select('#forwardButton');
-    forwardButton.hide();
-    forwardButton.html('<i class="fa fa-angle-right" aria-hidden="true"></i>');
-
-    backButton = select('#backButton');
-    backButton.hide();
-    backButton.html('<i class="fa fa-angle-left" aria-hidden="true"></i>');
-
+    randomButton = select('#randomButton');
+    randomButton.hide();
+    randomButton.html('');
 
     resetIcon = function() {
         button.html('<i class="fa fa-play" aria-hidden="true"></i>');;
@@ -135,128 +118,68 @@ function draw() {}
 // https://css-tricks.com/snippets/javascript/select-random-item-array/
 function mySelectEvent() {
     let selected = this.selected();
-    clocation = select('#location');
+    randombuttonDescription = select('#randombuttonDescription');
+    randombuttonDescription.html('');
+    randomButton.html('');
+    randomButton.show();
     buttonDescription = select('#buttonDescription');
+    let randombuttonMessage = 'Change the Image Randomly';
     button.show();
-    forwardButton.show();
-    backButton.show();
 
     if (selected === 'The Four Seasons') {
-        background(imgSpring2);
-        clocation.html(location1);
+        background(imgSeason2);
         quoteSelect.html(seasonQuote);
+        randombuttonDescription.html('');
+        randomButton.hide();
         buttonDescription.html('');
         button.hide();
-        backButton.hide();
-        forwardButton.hide();
 
     } else if (selected === 'Spring') {
-        image(imgSpring1, 0, 0, 400, 266.66);
-        spring();
-        clocation.html(location1);
+        image(imgSpringArray[0], 0, 0, 400, 266.66);
+        randomButton.mousePressed(function() {
+            let randomSpringImg = imgSpringArray[floor(random() * imgSpringArray.length)];
+            image(randomSpringImg, 0, 0, 400, 266.66);
+        });
+        randombuttonDescription.html(randombuttonMessage);
+        randomButton.html('<i class="fa fa-umbrella" aria-hidden="true"></i>');
         quoteSelect.html(springQuote);
-        buttonDescription.html('rain');
+        buttonDescription.html('Sound of Rain');
         sound = springSound;
 
     } else if (selected === 'Summer') {
-        image(imgSummer1, 0, 0, 400, 266.66);
-        summer();
-        clocation.html(location1);
+        image(imgSummerArray[0], 0, 0, 400, 266.66);
+        randomButton.mousePressed(function() {
+            let randomImg = imgSummerArray[floor(random() * imgSummerArray.length)];
+            image(randomImg, 0, 0, 400, 266.66);
+        });
+        randombuttonDescription.html(randombuttonMessage);
+        randomButton.html('<i class="fa fa-sun-o" aria-hidden="true"></i>');
         quoteSelect.html(summerQuote);
-        buttonDescription.html('sun');
+        buttonDescription.html('Sound of Sun');
         sound = summerSound;
 
     } else if (selected === 'Fall') {
-        image(imgFall1, 0, 0, 400, 266.66);
-        fall();
-        clocation.html(location1);
+        image(imgFallArray[0], 0, 0, 400, 266.66);
+        randomButton.mousePressed(function() {
+            let randomImg = imgFallArray[floor(random() * imgFallArray.length)];
+            image(randomImg, 0, 0, 400, 266.66);
+        });
+        randombuttonDescription.html(randombuttonMessage);
+        randomButton.html('<i class="fa fa-cloud" aria-hidden="true"></i>');
         quoteSelect.html(fallQuote);
-        buttonDescription.html('winds');
+        buttonDescription.html('Sound of Winds');
         sound = fallSound;
 
     } else if (selected === 'Winter') {
-        image(imgWinter1, 0, 0, 400, 266.66);
-        winter();
-        clocation.html(location1);
+        image(imgWinterArray[0], 0, 0, 400, 266.66);
+        randomButton.mousePressed(function() {
+            let randomImg = imgWinterArray[floor(random() * imgWinterArray.length)];
+            image(randomImg, 0, 0, 400, 266.66);
+        });
+        randombuttonDescription.html(randombuttonMessage);
+        randomButton.html('<i class="fa fa-snowflake-o" aria-hidden="true"></i>');
         quoteSelect.html(winterQuote);
-        buttonDescription.html('snow');
+        buttonDescription.html('Sound of Snow');
         sound = winterSound;
     }
 } // close function mySelectEvent
-
-function spring() {
-    let imgSpringArray = [imgSpring1, imgSpring2, imgSpring3, imgSpring4, imgSpring5, imgSpring6, imgSpring7, imgSpring8];
-    counter = 0;
-
-    forwardButton.mousePressed(function() {
-        for (i = 0; i < imgSpringArray.length; i++) {
-            image(imgSpringArray[i], 0, 0, 400, 266.66);
-            counter++;
-        }
-    });
-    backButton.mousePressed(function() {
-        counter = 0;
-        for (i = 0; i < imgSpringArray.length; i--) {
-            image(imgSpringArray[i], 0, 0, 400, 266.66);
-            counter--;
-        }
-    });
-}
-
-
-function summer() {
-    let imgSummerArray = [imgSummer1, imgSummer2];
-    counter = 0;
-
-    forwardButton.mousePressed(function() {
-        for (i = 0; i < imgSummerArray.length; i++) {
-            image(imgSummerArray[i], 0, 0, 400, 266.66);
-            counter++;
-        }
-    });
-    backButton.mousePressed(function() {
-        counter = 0;
-        for (i = 0; i < imgSummerArray.length; i--) {
-            image(imgSummerArray[i], 0, 0, 400, 266.66);
-            counter--;
-        }
-    });
-}
-
-function fall() {
-    let imgFallArray = [imgFall1, imgFall2];
-    counter = 0;
-
-    forwardButton.mousePressed(function() {
-        for (i = 0; i < imgFallArray.length; i++) {
-            image(imgFallArray[i], 0, 0, 400, 266.66);
-            counter++;
-        }
-    });
-    backButton.mousePressed(function() {
-        counter = 0;
-        for (i = 0; i < imgFallArray.length; i--) {
-            image(imgFallArray[i], 0, 0, 400, 266.66);
-            counter--;
-        }
-    });
-}
-
-function winter() {
-    let imgWinterArray = [imgWinter1, imgWinter2];
-    counter = 0;
-
-    forwardButton.mousePressed(function() {
-        for (i = 0; i < imgWinterArray.length; i++) {
-            image(imgWinterArray[i], 0, 0, 400, 266.66);
-            counter++;
-        }
-    });
-    backButton.mousePressed(function() {
-        counter = 0;
-        for (i = 0; i < imgWinterArray.length; i--) {
-            image(imgWinterArray[i], 0, 0, 400, 266.66);
-            counter--;
-        }
-    });
-}

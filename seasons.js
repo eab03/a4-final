@@ -1,3 +1,4 @@
+/* p5 code for home page */
 // https://www.goodreads.com/quotes/142293-and-so-with-the-sunshine-and-the-great-bursts-of
 // https://www.goodreads.com/quotes/832800-he-found-himself-wondering-at-times-especially-in-the-autumn
 // https://www.goodreads.com/quotes/121518-i-wonder-if-the-snow-loves-the-trees-and-fields
@@ -14,7 +15,6 @@ let imgFall;
 let imgWinter;
 let imgArray;
 
-
 function seasons() {
     let h = hour();
     quote = select('#quote');
@@ -29,10 +29,10 @@ function seasons() {
     let s = function(p) {
 
         p.preload = function() {
-            imgSpring = p.loadImage('./images/spring/spring1.jpg');
-            imgSummer = p.loadImage('./images/summer/summer1.jpg');
-            imgFall = p.loadImage('./images/fall/fall1.jpg');
-            imgWinter = p.loadImage('./images/winter/winter1.jpg');
+            imgSpring = p.loadImage('./images/spring/spring-a.jpg');
+            imgSummer = p.loadImage('./images/summer/summer-a.jpg');
+            imgFall = p.loadImage('./images/fall/fall-a.jpg');
+            imgWinter = p.loadImage('./images/winter/winter-b.jpg');
         };
         p.setup = function() {
             p.createCanvas(125, 720);
@@ -64,10 +64,10 @@ function seasons() {
     let t = function(p) {
 
         p.preload = function() {
-            imgSpring = p.loadImage('./images/spring/spring1.jpg');
-            imgSummer = p.loadImage('./images/summer/summer1.jpg');
-            imgFall = p.loadImage('./images/fall/fall1.jpg');
-            imgWinter = p.loadImage('./images/winter/winter1.jpg');
+            imgSpring = p.loadImage('./images/spring/spring-a.jpg');
+            imgSummer = p.loadImage('./images/summer/summer-a.jpg');
+            imgFall = p.loadImage('./images/fall/fall-a.jpg');
+            imgWinter = p.loadImage('./images/winter/winter-b.jpg');
         };
         p.setup = function() {
             p.createCanvas(125, 720);

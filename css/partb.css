@@ -1,4 +1,4 @@
-/* Liz Bright - css for partb*/
+/* Liz Bright - additional css for partb */
 
 .wrapper {
     height: 685px;
@@ -57,7 +57,7 @@
     color: darkgrey;
     font-size: .8em;
     margin: 0 auto;
-    margin-left: -187.5px;
+    margin-left: -200px;
     padding-top: 50px;
     top: 600px;
     left: 50%;
@@ -69,26 +69,23 @@ span {
     color: coral;
 }
 
-#backButton {
-    background: none;
-    border: none;
-    color: darkgrey;
-    margin-left: -250px;
-    font-size: 135%;
-    font-weight: bold;
-    top: 200px;
+/* button for changing the images */
+/* https://www.w3schools.com/icons/fontawesome_icons_webapp.asp */
+#randombuttonDescription {
+    color: coral;
+    font-size: .75em;
+    margin-left: -200px;
     left: 50%;
+    top: 385px;
     position: absolute;
 }
 
-#forwardButton {
-    background: none;
-    border: none;
+#randomButton {
     color: darkgrey;
-    margin-left: 225px;
-    font-size: 135%;
+    margin-left: -10px;
+    font-size: 110%
     font-weight: bold;
-    top: 200px;
+    top: 400px;
     left: 50%;
     position: absolute;
 }
@@ -99,16 +96,16 @@ span {
 #buttonDescription {
     color: coral;
     font-size: .75em;
-    margin-left: 130px;
+    margin-left: 75px;
     left: 50%;
     top: 385px;
     position: absolute;
 }
 
-
 #playButton {
-    color: coral;
-    margin-left: 170px;
+    color: darkgrey;
+    font-size: 75%;
+    margin-left: 180px;
     top: 400px;
     left: 50%;
     position: absolute;
