@@ -26,6 +26,7 @@ function seasons() {
     let winter = (h >= 0 & h <= 5);
 
     // LEFT 'BORDER'
+    // all images are my own (by Liz Bright)
     let s = function(p) {
 
         p.preload = function() {
@@ -42,16 +43,16 @@ function seasons() {
                 imgArray[i];
             }
             if (spring) {
-                p.image(imgArray[0], 0, 0, 600, 720);
+                p.image(imgArray[0], 0, 0, 600, 600);
                 quote.html(springQuote);
             } else if (summer) {
-                p.image(imgArray[1], 0, 0, 600, 720);
+                p.image(imgArray[1], 0, 0, 600, 600);
                 quote.html(summerQuote);
             } else if (fall) {
-                p.image(imgArray[2], 0, 0, 600, 720);
+                p.image(imgArray[2], 0, 0, 600, 600);
                 quote.html(fallQuote);
             } else if (winter) {
-                p.image(imgArray[3], 0, 0, 600, 720);
+                p.image(imgArray[3], 0, 0, 600, 600);
                 quote.html(winterQuote);
             }
         };
@@ -77,13 +78,13 @@ function seasons() {
                 imgArray[i];
             }
             if (spring) {
-                p.image(imgSpring, 0, 0, 600, 720);
+                p.image(imgSpring, 0, 0, 600, 600);
             } else if (summer) {
-                p.image(imgArray[1], 0, 0, 600, 720);
+                p.image(imgArray[1], 0, 0, 600, 600);
             } else if (fall) {
-                p.image(imgArray[2], 0, 0, 600, 720);
+                p.image(imgArray[2], 0, 0, 600, 600);
             } else if (winter) {
-                p.image(imgArray[3], 0, 0, 600, 720);
+                p.image(imgArray[3], 0, 0, 600, 600);
             }
         };
         p.draw = function() {};

@@ -15,9 +15,9 @@
     margin-left: -325px;
     padding: 5px 25px 5px 25px;
     overflow: auto;
-    top: 300px;
+    top: 250px;
     left: 50%;
-    height: 400px;
+    height: 425px;
     width: 600px;
     position: absolute;
 }
@@ -46,12 +46,10 @@
 
 #conditions {
     float: left;
-    margin-top: -5px;
 }
 
 #moon {
     float: right;
-    margin-top: -5px;
 }
 
 #moon h3 {
@@ -69,7 +67,7 @@
 
 #changelocation {
     font-size: .75em;
-    top: 325px;
+    top: 345px;
     position: absolute;
 }
 
@@ -85,7 +83,7 @@
 #borderleft, #borderright {
     background-color: darkgrey;
     top: 168.5px;
-    height: 720px;
+    height: 600px;
     width: 125px;
     position: absolute;
 }
@@ -103,13 +101,13 @@ footer {
     background-color: #393939;
     clear: all;
     height: 50px;
-    margin-top: 720px;
+    margin-top: 600px;
 }
 
 #logo {
     background-color: #FFF6E6;
     right: 125px;
-    top: 900px;
+    top: 782.5px;
     position: absolute;
 }
 

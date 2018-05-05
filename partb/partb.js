@@ -6,6 +6,7 @@ let imgWinterArray = [];
 
 let randomImg;
 let randomButton;
+let randomButtonMessage;
 
 // https://www.goodreads.com/quotes/tag/seasons
 // http://www.azquotes.com/quotes/topics/spring-rain.html
@@ -24,9 +25,11 @@ let sound;
 let springSound, summerSound, fallSound, winterSound;
 let button;
 let buttonDescription;
+let soundartist;
 
 // LOAD IMAGES AND SOUND FILES
 // https://www.youtube.com/watch?v=FVYGyaxG4To
+// all images are my own (by Liz Bright)
 function preload() {
     for (var i = 0; i < 7; i++) {
         imgSpringArray[i] = loadImage('../images/spring/spring' + i + '.jpg');
@@ -45,6 +48,10 @@ function preload() {
     imgSeason2 = loadImage('../images/season2.jpg');
 
     // https://p5js.org/reference/#/p5.SoundFile
+    // http://soundbible.com/1158-Rain.html
+    // http://soundbible.com/1661-Sunny-Day.html
+    // http://soundbible.com/1810-Wind.html
+    // http://soundbible.com/633-Snowing.html
     soundFormats('mp3');
     springSound = loadSound('../assets/Rain-SoundBible.com-176235038.mp3');
     summerSound = loadSound('../assets/Sunny Day-SoundBible.com-2064222612.mp3');
@@ -57,6 +64,8 @@ function setup() {
     canvas.position(125, 75);
     canvas.parent('mycontainer');
     background(imgSeason1);
+    soundartist = select('#soundartist');
+    soundartist.html('Sounds available on SoundBible.com');
 
     // CREATE DROPDOWN MENU
     // https://github.com/processing/p5.js/issues/1864
@@ -120,11 +129,12 @@ function mySelectEvent() {
     let selected = this.selected();
     randombuttonDescription = select('#randombuttonDescription');
     randombuttonDescription.html('');
+    randombuttonMessage = 'Change the Image Randomly';
     randomButton.html('');
     randomButton.show();
     buttonDescription = select('#buttonDescription');
-    let randombuttonMessage = 'Change the Image Randomly';
     button.show();
+    soundartist.html('Sounds available on SoundBible.com');
 
     if (selected === 'The Four Seasons') {
         background(imgSeason2);
@@ -133,6 +143,7 @@ function mySelectEvent() {
         randomButton.hide();
         buttonDescription.html('');
         button.hide();
+        soundartist.html('Sounds available on SoundBible.com');
 
     } else if (selected === 'Spring') {
         image(imgSpringArray[0], 0, 0, 400, 266.66);
@@ -145,6 +156,7 @@ function mySelectEvent() {
         quoteSelect.html(springQuote);
         buttonDescription.html('Sound of Rain');
         sound = springSound;
+        soundartist.html('Sound recorded by Mike Koenig for SoundBible.com');
 
     } else if (selected === 'Summer') {
         image(imgSummerArray[0], 0, 0, 400, 266.66);
@@ -157,6 +169,7 @@ function mySelectEvent() {
         quoteSelect.html(summerQuote);
         buttonDescription.html('Sound of Sun');
         sound = summerSound;
+        soundartist.html('Sound recorded by Stephan for SoundBible.com<br>');
 
     } else if (selected === 'Fall') {
         image(imgFallArray[0], 0, 0, 400, 266.66);
@@ -169,6 +182,7 @@ function mySelectEvent() {
         quoteSelect.html(fallQuote);
         buttonDescription.html('Sound of Winds');
         sound = fallSound;
+        soundartist.html('Sound recorded by Mike Koenig for SoundBible.com<br>');
 
     } else if (selected === 'Winter') {
         image(imgWinterArray[0], 0, 0, 400, 266.66);
@@ -181,5 +195,6 @@ function mySelectEvent() {
         quoteSelect.html(winterQuote);
         buttonDescription.html('Sound of Snow');
         sound = winterSound;
+        soundartist.html('Sound recorded by Mark DiAngelo for SoundBible.com<br>');
     }
 } // close function mySelectEvent

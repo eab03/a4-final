@@ -24,7 +24,7 @@
 
 /* quote on home page */
 .quote {
-    margin-top: 105px;
+    margin-top: 100px;
     padding: 0px 50px 0px 50px;
 }
 
@@ -47,7 +47,7 @@
 #borderleft, #borderright {
     background-color: darkgrey;
     top: 168.5px;
-    height: 720px;
+    height: 600px;
     width: 125px;
     position: absolute;
 }
@@ -64,12 +64,16 @@
 footer {
     background-color: #393939;
     height: 50px;
-    margin-top: 720px;
+    margin-top: 600px;
 }
 
-footer #logo {
-    background-color: #FFF6E6;
-    right: 125px;
-    top: 900px;
+footer p {
+    color: white;
+    font-size: .5em;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-right: 250px;
+    top: 772.5px;
+    right: -112.5px;
     position: absolute;
 }

@@ -19,7 +19,7 @@
     margin-left: -325px;
     padding: 35px 25px 5px 25px;
     overflow: auto;
-    top: 100px;
+    top: 55px;
     left: 50%;
     height: 400px;
     width: 600px;
@@ -58,8 +58,8 @@
     font-size: .8em;
     margin: 0 auto;
     margin-left: -200px;
-    padding-top: 50px;
-    top: 600px;
+    padding-top: 60px;
+    top: 550px;
     left: 50%;
     max-width: 100%;
     position: absolute;
@@ -76,7 +76,7 @@ span {
     font-size: .75em;
     margin-left: -200px;
     left: 50%;
-    top: 385px;
+    top: 395px;
     position: absolute;
 }
 
@@ -85,7 +85,7 @@ span {
     margin-left: -10px;
     font-size: 110%
     font-weight: bold;
-    top: 400px;
+    top: 410px;
     left: 50%;
     position: absolute;
 }
@@ -98,7 +98,7 @@ span {
     font-size: .75em;
     margin-left: 75px;
     left: 50%;
-    top: 385px;
+    top: 395px;
     position: absolute;
 }
 
@@ -106,7 +106,7 @@ span {
     color: darkgrey;
     font-size: 75%;
     margin-left: 180px;
-    top: 400px;
+    top: 410px;
     left: 50%;
     position: absolute;
 }
@@ -115,7 +115,7 @@ span {
 #borderleft, #borderright {
     background-color: darkgrey;
     top: -25px;
-    height: 720px;
+    height: 600px;
     width: 125px;
     position: absolute;
 }
@@ -131,13 +131,19 @@ span {
 /* footer */
 footer {
     background-color: #393939;
+    color: white;
     height: 50px;
-    margin-top: 10px;
+    margin-top: -110px;
 }
 
-#logo {
-    background-color: #FFF6E6;
-    right: 125px;
-    top: 900px;
+.credits {
+    color: white;
+    font-size: .5em;
+    line-height: 15px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+    padding-right: 250px;
+    top: 750px;
+    right: -112.5px;
     position: absolute;
 }
