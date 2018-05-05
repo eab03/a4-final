@@ -156,7 +156,7 @@ function mySelectEvent() {
         quoteSelect.html(springQuote);
         buttonDescription.html('Sound of Rain');
         sound = springSound;
-        soundartist.html('Sound recorded by Mike Koenig for SoundBible.com');
+        soundartist.html('Sound recorded by Mike Koenig, on SoundBible.com');
 
     } else if (selected === 'Summer') {
         image(imgSummerArray[0], 0, 0, 400, 266.66);
@@ -169,7 +169,7 @@ function mySelectEvent() {
         quoteSelect.html(summerQuote);
         buttonDescription.html('Sound of Sun');
         sound = summerSound;
-        soundartist.html('Sound recorded by Stephan for SoundBible.com<br>');
+        soundartist.html('Sound recorded by Stephan, on SoundBible.com<br>');
 
     } else if (selected === 'Fall') {
         image(imgFallArray[0], 0, 0, 400, 266.66);
@@ -182,7 +182,7 @@ function mySelectEvent() {
         quoteSelect.html(fallQuote);
         buttonDescription.html('Sound of Winds');
         sound = fallSound;
-        soundartist.html('Sound recorded by Mike Koenig for SoundBible.com<br>');
+        soundartist.html('Sound recorded by Mark DiAngelo, on SoundBible.com<br>');
 
     } else if (selected === 'Winter') {
         image(imgWinterArray[0], 0, 0, 400, 266.66);
@@ -195,6 +195,6 @@ function mySelectEvent() {
         quoteSelect.html(winterQuote);
         buttonDescription.html('Sound of Snow');
         sound = winterSound;
-        soundartist.html('Sound recorded by Mark DiAngelo for SoundBible.com<br>');
+        soundartist.html('Sound recorded by Mike Koenig, on SoundBible.com<br>');
     }
 } // close function mySelectEvent
