@@ -63,6 +63,7 @@
 /* footer */
 footer {
     background-color: #393939;
+    clear: all;
     height: 50px;
     margin-top: 600px;
 }
@@ -72,8 +73,7 @@ footer p {
     font-size: .5em;
     margin-bottom: 5px;
     padding-top: 10px;
-    padding-right: 250px;
+    padding-right: 150px;
     top: 772.5px;
-    right: -112.5px;
-    position: absolute;
+    float: right;
 }

@@ -131,6 +131,7 @@ span {
 /* footer */
 footer {
     background-color: #393939;
+    clear: all;
     color: white;
     height: 50px;
     margin-top: -110px;
@@ -138,12 +139,10 @@ footer {
 
 .credits {
     color: white;
+    float: right;
     font-size: .5em;
     line-height: 15px;
     margin-bottom: 5px;
-    padding-top: 20px;
-    padding-right: 250px;
+    padding-right: 150px;
     top: 750px;
-    right: -112.5px;
-    position: absolute;
 }
