@@ -1,0 +1,75 @@
+/* Liz Bright - css for Final Project */
+
+.wrapper {
+    width: 100%;
+}
+
+/* https://www.sitepoint.com/css-center-position-absolute-div/ */
+.content {
+    background-color: #FFF6E6;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin-left: -325px;
+    padding: 35px 25px 5px 25px;
+    overflow: none;
+    top: 250px;
+    left: 50%;
+    height: 400px;
+    width: 600px;
+    position: absolute;
+}
+
+/* quote on home page */
+.quote {
+    margin-top: 105px;
+    padding: 0px 50px 0px 50px;
+}
+
+.quote p {
+    color: darkgrey;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1em;
+    line-height: 28px;
+    margin-left: 15px;
+    text-align: left;
+    vertical-align: center;
+}
+
+.author {
+    font-style: italic;
+    font-size: .91em;
+}
+
+/* left and right divs for canvases */
+#borderleft, #borderright {
+    background-color: darkgrey;
+    top: 168.5px;
+    height: 720px;
+    width: 125px;
+    position: absolute;
+}
+
+#borderleft {
+    left: 0px;
+}
+
+#borderright {
+    right: 0px;
+}
+
+/* footer */
+footer {
+    background-color: #393939;
+    height: 50px;
+    margin-top: 720px;
+}
+
+footer #logo {
+    background-color: #FFF6E6;
+    right: 125px;
+    top: 900px;
+    position: absolute;
+}

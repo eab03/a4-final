@@ -3,7 +3,7 @@ let clocation;
 let location1 = 'Cambridge, MA';
 let location2 = 'Boston, MA';
 
-let imgSpring, imgSummer, imgFall, imgWinter;
+let imgSpring1, imgSummer1, imgFall1, imgWinter1;
 let imgSpring2, imgFall2, imgWinter2;
 
 let randomImgSpring;
@@ -34,13 +34,21 @@ let quoteSelect;
 
 // LOAD IMAGES AND SOUND FILES
 function preload() {
-    imgSpring = loadImage('../images/spring2.jpg');
-    imgSpring2 = loadImage('../images/spring3.jpg');
-    imgSummer = loadImage('../images/summer2.jpg');
-    imgFall = loadImage('../images/fall1.jpg');
-    imgFall2 = loadImage('../images/fall5.jpg');
-    imgWinter = loadImage('../images/winter2.jpg');
-    imgWinter2 = loadImage('../images/winter3.jpg');
+    imgSpring1 = loadImage('../images/spring/springa.jpg');
+    imgSpring2 = loadImage('../images/spring/springb.jpg');
+    imgSpring3 = loadImage('../images/spring/springc.jpg');
+    imgSpring4 = loadImage('../images/spring/springd.jpg');
+    imgSpring5 = loadImage('../images/spring/springe.jpg');
+    imgSpring5 = loadImage('../images/spring/springf.jpg');
+    imgSpring6 = loadImage('../images/spring/springg.jpg');
+    imgSpring7 = loadImage('../images/spring/springh.jpg');
+    imgSpring8 = loadImage('../images/spring/springi.jpg');
+    imgSummer1 = loadImage('../images/summer/summera.jpg');
+    imgSummer2 = loadImage('../images/summer/summerb.jpg');
+    imgFall1 = loadImage('../images/fall/falla.jpg');
+    imgFall2 = loadImage('../images/fall/fallb.jpg');
+    imgWinter1 = loadImage('../images/winter/wintera.jpg');
+    imgWinter2 = loadImage('../images/winter/winterb.jpg');
 
 
     // https://p5js.org/reference/#/p5.SoundFile
@@ -143,7 +151,7 @@ function mySelectEvent() {
         forwardButton.hide();
 
     } else if (selected === 'Spring') {
-        image(imgSpring, 0, 0, 400, 266.66);
+        image(imgSpring1, 0, 0, 400, 266.66);
         spring();
         clocation.html(location1);
         quoteSelect.html(springQuote);
@@ -151,7 +159,7 @@ function mySelectEvent() {
         sound = springSound;
 
     } else if (selected === 'Summer') {
-        image(imgSummer, 0, 0, 400, 266.66);
+        image(imgSummer1, 0, 0, 400, 266.66);
         summer();
         clocation.html(location1);
         quoteSelect.html(summerQuote);
@@ -159,7 +167,7 @@ function mySelectEvent() {
         sound = summerSound;
 
     } else if (selected === 'Fall') {
-        image(imgFall, 0, 0, 400, 266.66);
+        image(imgFall1, 0, 0, 400, 266.66);
         fall();
         clocation.html(location1);
         quoteSelect.html(fallQuote);
@@ -167,7 +175,7 @@ function mySelectEvent() {
         sound = fallSound;
 
     } else if (selected === 'Winter') {
-        image(imgWinter, 0, 0, 400, 266.66);
+        image(imgWinter1, 0, 0, 400, 266.66);
         winter();
         clocation.html(location1);
         quoteSelect.html(winterQuote);
@@ -177,7 +185,7 @@ function mySelectEvent() {
 } // close function mySelectEvent
 
 function spring() {
-    let imgSpringArray = [imgSpring, imgSpring2];
+    let imgSpringArray = [imgSpring1, imgSpring2, imgSpring3, imgSpring4, imgSpring5, imgSpring6, imgSpring7, imgSpring8];
     counter = 0;
 
     forwardButton.mousePressed(function() {
@@ -197,7 +205,7 @@ function spring() {
 
 
 function summer() {
-    let imgSummerArray = [imgSummer];
+    let imgSummerArray = [imgSummer1, imgSummer2];
     counter = 0;
 
     forwardButton.mousePressed(function() {
@@ -216,7 +224,7 @@ function summer() {
 }
 
 function fall() {
-    let imgFallArray = [imgFall, imgFall2];
+    let imgFallArray = [imgFall1, imgFall2];
     counter = 0;
 
     forwardButton.mousePressed(function() {
@@ -235,7 +243,7 @@ function fall() {
 }
 
 function winter() {
-    let imgWinterArray = [imgWinter, imgWinter2];
+    let imgWinterArray = [imgWinter1, imgWinter2];
     counter = 0;
 
     forwardButton.mousePressed(function() {
