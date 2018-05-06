@@ -14,11 +14,11 @@ let randomButtonMessage;
 // http://www.azquotes.com/quotes/topics/autumn-wind.html
 // https://www.goodreads.com/quotes/7342983-outside-snow-solidified-itself-into-graceful-forms-the-peace-of
 
-let seasonQuote = 'In the depth of winter, I finally learned that within me there <br>lay an invincible summer. ― Albert Camus';
-let springQuote = 'Spring <span>rain</span> conveyed under the trees in drops.<br>―Matsuo Basho';
-let summerQuote = 'Let us dance in the <span>sun</span>, wearing wild flowers in our hair...<br>―Susan Polis Schutz';
-let fallQuote = 'Wild is the music of autumnal <span>winds</span> Amongst the faded <br>woods. ―William Wordsworth';
-let winterQuote = 'Outside, <span>snow</span> solidified itself into graceful forms. The peace <br>of winter stars seemed permanent. ―Toni Morrison, Beloved';
+let seasonQuote = 'In the depth of winter, I finally learned that within me there <br>lay an invincible summer.<span class="author">―Albert Camus</span>';
+let springQuote = 'Spring <span>rain</span> conveyed under the trees in drops.<br><span class="author">―Matsuo Basho</span>';
+let summerQuote = 'Let us dance in the <span>sun</span>, wearing wild flowers in our hair...<br><span class="author">―Susan Polis Schutz</span>';
+let fallQuote = 'Wild is the music of autumnal <span>winds</span> Amongst the faded <br>woods.<span class="author">―William Wordsworth</span>';
+let winterQuote = 'Outside, <span>snow</span> solidified itself into graceful forms. The peace <br>of winter stars seemed permanent.<span class="author">―Toni Morrison, Beloved</span>';
 let quoteSelect;
 
 let sound;

@@ -41,7 +41,7 @@
     outline: none;
     padding: 7.5px 50px 7.5px 13px !important;
     margin: 0 auto;
-    margin-top: -17.5px;
+    margin-top: -15px;
     left: 200px;
     max-width: 100%;
     position: absolute;
@@ -54,6 +54,7 @@
 
 /* quotes */
 .quote {
+    clear: all;
     color: darkgrey;
     font-size: .8em;
     margin: 0 auto;
@@ -67,6 +68,13 @@
 
 span {
     color: coral;
+}
+
+.author {
+    color: darkgrey !important;
+    float: right;
+    font-style: italic;
+    font-size: .91em;
 }
 
 /* button for changing the images */

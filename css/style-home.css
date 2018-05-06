@@ -24,6 +24,7 @@
 
 /* quote on home page */
 .quote {
+    clear: all;
     margin-top: 100px;
     padding: 0px 50px 0px 50px;
 }
@@ -39,8 +40,10 @@
 }
 
 .author {
+    float: right;
     font-style: italic;
     font-size: .91em;
+    padding-right: 15px;
 }
 
 /* left and right divs for canvases */
