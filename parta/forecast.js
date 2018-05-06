@@ -8,6 +8,8 @@ let astronomy;
 
 // variable for today's forecast -- based on the 'forecast' URL
 let forecastToday;
+let iconToday;
+let icon;
 
 // variables for current conditions -- based on the 'current conditions' URL
 let clocationFull;

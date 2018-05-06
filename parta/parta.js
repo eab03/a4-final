@@ -13,6 +13,7 @@ let fileType = '.json';
 let urlForecast;
 let urlConditions;
 let urlAstronomy;
+let s;
 
 // Code based on DGMD E12 Week 10, Part 2
 function setup() {
