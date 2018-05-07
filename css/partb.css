@@ -157,29 +157,23 @@ footer {
 
 /* Extra small and small devices (landscape phones, 300px and up) */
 @media (min-width: 300px) and (max-width: 767px) {
-    @media (max-width: 575px) {
-        .quote {
-            clear: all;
-            color: darkgrey;
-            font-size: .5em;
-            margin: 0 auto;
-            margin-left: -200px;
-            padding-top: 60px;
-            top: 550px;
-            left: 50%;
-            max-width: 100%;
-            position: absolute;
-        }
+    .quote {
+        clear: all;
+        color: darkgrey;
+        font-size: .5em;
+        margin: 0 auto;
+        margin-left: -200px;
+        padding-top: 60px;
+        top: 550px;
+        left: 50%;
+        max-width: 100%;
+        position: absolute;
+    }
 
-        span {
-            color: coral;
-        }
-
-        .author {
-            color: darkgrey !important;
-            float: right;
-            font-style: italic;
-            font-size: .6em;
-        }
+    .author {
+        color: darkgrey !important;
+        float: right;
+        font-style: italic;
+        font-size: .6em;
     }
 }
