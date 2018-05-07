@@ -170,6 +170,10 @@ footer {
         position: absolute;
     }
 
+    .quote p {
+        font-size: .5em;
+    }
+
     .author {
         color: darkgrey !important;
         float: right;
