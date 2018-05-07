@@ -40,7 +40,6 @@ let currentHour;
 let currentMin;
 let currentTime;
 
-
 // get the forecast of a different location (based on city and state/country inputs)
 function getnewForecast() {
 
@@ -119,6 +118,8 @@ function gotDataAstronomy(myDataAstronomy) {
     currentHour = astronomy.moon_phase.current_time.hour;
     currentMin = astronomy.moon_phase.current_time.minute;
     currentTime = Number(currentHour + currentMin);
+
+    let color = currentHour.value;
 
     // change color of 'borders' based on time
     if (currentTime > sunriseTime && currentTime < sunsetTime) {

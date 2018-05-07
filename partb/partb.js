@@ -31,7 +31,7 @@ let soundartist;
 // https://www.youtube.com/watch?v=FVYGyaxG4To
 // all images are my own (by Liz Bright)
 function preload() {
-    for (var i = 0; i < 7; i++) {
+    for (var i = 0; i < 9; i++) {
         imgSpringArray[i] = loadImage('../images/spring/spring' + i + '.jpg');
     }
     for (var i = 0; i < 7; i++) {

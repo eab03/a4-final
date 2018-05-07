@@ -25,8 +25,8 @@
 /* quote on home page */
 .quote {
     clear: all;
-    margin-top: 95px;
-    padding: 0px 50px 0px 50px;
+    padding: 100px 50px 50px 50px;
+    vertical-align: center;
 }
 
 .quote p {
@@ -36,7 +36,6 @@
     line-height: 28px;
     margin-left: 15px;
     text-align: left;
-    vertical-align: center;
 }
 
 .author {
@@ -44,6 +43,11 @@
     font-style: italic;
     font-size: .91em;
     padding-right: 15px;
+}
+
+.winter {
+    font-size: .91em;
+    line-height: 20px;
 }
 
 /* left and right divs for canvases */
