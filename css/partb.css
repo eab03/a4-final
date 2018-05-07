@@ -81,17 +81,17 @@ span {
 /* https://www.w3schools.com/icons/fontawesome_icons_webapp.asp */
 #randombuttonDescription {
     color: coral;
-    font-size: .75em;
+    font-size: .7em;
     margin-left: -200px;
     left: 50%;
-    top: 395px;
+    top: 397.5px;
     position: absolute;
 }
 
 #randomButton {
     color: darkgrey;
-    margin-left: -10px;
-    font-size: 110%
+    margin-left: -15px;
+    font-size: 75%;
     font-weight: bold;
     top: 410px;
     left: 50%;
@@ -103,10 +103,10 @@ span {
 /* https://fontawesome.com/v4.7.0/icon/stop/ */
 #buttonDescription {
     color: coral;
-    font-size: .75em;
+    font-size: .7em;
     margin-left: 75px;
     left: 50%;
-    top: 395px;
+    top: 397.5px;
     position: absolute;
 }
 
@@ -160,6 +160,7 @@ footer {
     .quote {
         clear: all;
         color: darkgrey;
+        font-size: 75%;
         margin: 0 auto;
         margin-left: -200px;
         padding-top: 60px;
@@ -170,13 +171,13 @@ footer {
     }
 
     .quote p {
-        font-size: .5em !important;
+        font-size: 50% !important;
     }
 
     .author {
         color: darkgrey !important;
         float: right;
         font-style: italic;
-        font-size: .6em;
+        font-size: 75%;
     }
 }
