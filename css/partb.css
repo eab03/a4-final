@@ -74,7 +74,7 @@ span {
     color: darkgrey !important;
     float: right;
     font-style: italic;
-    font-size: .91em;
+    font-size: .9em;
 }
 
 /* button for changing the images */
@@ -161,7 +161,7 @@ footer {
         .quote {
             clear: all;
             color: darkgrey;
-            font-size: .7em;
+            font-size: .5em;
             margin: 0 auto;
             margin-left: -200px;
             padding-top: 60px;
@@ -179,7 +179,7 @@ footer {
             color: darkgrey !important;
             float: right;
             font-style: italic;
-            font-size: .81em;
+            font-size: .6em;
         }
     }
 }
